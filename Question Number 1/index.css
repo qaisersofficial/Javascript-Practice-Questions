@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+h1,p{
+    color: green;
+}
+button{
+    position: relative;
+    letter-spacing: 2px;
+   padding: 12px;
+   border: none;
+   border-radius: 25px;
+   color: white;
+   background-color: black;
+   text-align: center;
+   transition-duration: 0.4s;
+   font-size: 20px;
+   overflow: hidden;
+   cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: green;
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(254, 253, 253, 0.19);
+}
+#output{
+    color: red;
+
+}
+.op{
+    color: rgb(97, 183, 97);
+}
+
+  

@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(45deg, red, #3F5EFB);
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .form{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 20%;
+  
+  }
+   form{
+    background-color: white;
+    padding: 3em;
+    height: 120px;
+    border-radius: 20px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+  transition: all 1s ease-in-out;
+   }
+   input{
+   
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+border-left: 1px solid white;
+border-left: 1px solid white;
+   }

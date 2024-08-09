@@ -1,32 +1,73 @@
 body {
-    background: linear-gradient(45deg, red, #3F5EFB);
+    background: linear-gradient(85deg, #b44b54d2, #4BB4AC);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+  }
+  h1{
+    color:#568fa9 ;
+    margin-left: 7%;
+  }
+  p{
+    color: #2e4e5c;
+    margin-left: 12%;
+    text-align: justify;
   }
   .form{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 20%;
-  
-  }
+    top: 40%;
+}
    form{
-    background-color: white;
+    background-color: rgba(255,255,255,0.3);
     padding: 3em;
-    height: 120px;
+    height: 50px;
     border-radius: 20px;
-    border-left: 1px solid white;
-    border-top: 1px solid white;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
     box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
     text-align: center;
     position: relative;
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  
    }
-   input{
-   
+   input, button{
+    background:transparent;
     width: 200px;
     padding: 1em;
     margin-bottom: 2em;
-border-left: 1px solid white;
-border-left: 1px solid white;
+    border: none;
+border-left: 1px solid rgba(255,255,255,0.3);
+border-top: 1px solid rgba(255,255,255,0.3);
+border-radius: 35px;
+backdrop-filter: blur(5px);
+box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    font-family: monospace, sans-serif;
+    font-weight: 500;
+    transition: all 0.2 ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    color: rgba(178, 39, 39, 0.854);
    }
+   input:hover{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+   }
+   input:focus{
+        background: rgba(255,255,255,0.1);
+        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+        outline: none;
+   }
+   button:hover {
+    cursor: pointer;
+  }
+  
+  button:active {
+    background: rgba(255,255,255,0.2);
+  }
+  ::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }

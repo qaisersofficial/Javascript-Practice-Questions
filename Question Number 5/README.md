@@ -18,7 +18,9 @@
 ## understading the logic of the program
 
 suppose the input is my name **"Qaiser"**
-For each iteration: <code>i = Any_string.length - 1</code> and <code>result_string = result_string + Any_string[i]</code>
+For each iteration: <code>i = Any_string.length - 1</code> and </br>
+<code>result_string = result_string + Any_string[i]</code>
+</br>
 First iteration: i = 6 - 1 = 5, **result_string = "" + "r" = "r"** </br>
 Second iteration: i = 5 - 1 = 4, **result_string = "r" + "e" = "re"** </br>
 Third iteration: i = 4 - 1 = 3, **result_string = "re" + "s" = "res"** </br>

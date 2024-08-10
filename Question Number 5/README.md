@@ -19,12 +19,12 @@
 
 suppose the input is my name **"Qaiser"**
 For each iteration: <code>i = Any_string.length - 1</code> and <code>result_string = result_string + Any_string[i]</code>
-First iteration: i = 6 - 1 = 5, **result_string = "" + "r" = "r"**
-Second iteration: i = 5 - 1 = 4, **result_string = "r" + "e" = "re"**
-Third iteration: i = 4 - 1 = 3, **result_string = "re" + "s" = "res"**
-Fourth iteration: i = 3 - 1 = 2,**result_string = "res" + "i" = "resi"**
-Fifth iteration: i = 2 - 1 = 1, **result_string = "resi" + "a" = "resia"**
-Sixth iteration: i = 1 - 1 = 0, **result_string = "resia" + "Q" = "resiaQ"**
+First iteration: i = 6 - 1 = 5, **result_string = "" + "r" = "r"** </br>
+Second iteration: i = 5 - 1 = 4, **result_string = "r" + "e" = "re"** </br>
+Third iteration: i = 4 - 1 = 3, **result_string = "re" + "s" = "res"** </br>
+Fourth iteration: i = 3 - 1 = 2,**result_string = "res" + "i" = "resi"** </br>
+Fifth iteration: i = 2 - 1 = 1, **result_string = "resi" + "a" = "resia"** </br>
+Sixth iteration: i = 1 - 1 = 0, **result_string = "resia" + "Q" = "resiaQ"** </br>
 End of the FOR Loop
 
 ## Output:

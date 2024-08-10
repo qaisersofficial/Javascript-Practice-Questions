@@ -6,4 +6,4 @@ function revstr(Any_String){
     }
     return result_string;
 }
-console.log(revstr("Qaiser Ali"))
+console.log(revstr("Qaiser Ali"));

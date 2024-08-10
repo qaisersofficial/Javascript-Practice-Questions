@@ -20,4 +20,4 @@ function revstr (Any_string){
 
     return join_Array;
 }
-console.log(revstr("Qaiser"));
+console.log(revstr("i am currently practing javascript Questions"));

@@ -1,4 +1,4 @@
-## Asterisk Pattern Generator
+## Counting Pattern Generator
 ==========================
 
 This JavaScript program generates a pattern of asterisks <code> (`1 to 5`)</code> and prints it to the console. The pattern consists of 5 rows, with each row containing an increasing number of asterisks.

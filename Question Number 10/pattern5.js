@@ -5,4 +5,5 @@ let i,j;
         row+="*";
         row+=" "
     }
+    console.log(row);
 }   

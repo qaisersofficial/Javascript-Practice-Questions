@@ -1,7 +1,7 @@
 ## Counting Pattern Generator
 ==========================
 
-This JavaScript program generates a pattern of asterisks <code> (`1 to 5`)</code> and prints it to the console. The pattern consists of 5 rows, with each row containing an increasing number of asterisks.
+This JavaScript program generates a pattern of number <code> (`1 to 5`)</code> and prints it to the console. The pattern consists of 5 rows.
 
 ## Output
 1<br>
@@ -11,7 +11,7 @@ This JavaScript program generates a pattern of asterisks <code> (`1 to 5`)</code
 12345<br>
 ## **How it works:**
 
-The program uses two nested `for` loops to generate the pattern. The outer loop iterates 5 times, generating each row of the pattern. The inner loop generates each asterisk (`1 to 5 `) in the current row. The resulting pattern is printed to the console.
+The program uses two nested `for` loops to generate the pattern. The outer loop iterates 5 times, generating each row of the pattern. The inner loop generates each number (`1 to 5 `) in the current row. The resulting pattern is printed to the console.
 
 ## **Run it:**
 

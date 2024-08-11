@@ -9,3 +9,6 @@ This JavaScript program generates a pattern of asterisks <code> (`*`)</code> and
 ***<br>
 ****<br>
 *****<br>
+## **How it works:**
+
+The program uses two nested `for` loops to generate the pattern. The outer loop iterates 5 times, generating each row of the pattern. The inner loop generates each asterisk (`*`) in the current row. The resulting pattern is printed to the console.

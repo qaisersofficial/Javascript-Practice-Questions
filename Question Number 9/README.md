@@ -6,11 +6,11 @@ This JavaScript program generates a pattern of asterisks (`*`) and prints it to 
 ## pattern
 ==========================
    </br >
- &nbsp;&nbsp;&nbsp;&nbsp;*</br>
- &nbsp;&nbsp;&nbsp;**</br>
- &nbsp;&nbsp;***</br>
- &nbsp;****</br>
-*****</br>
+ &nbsp;&nbsp;&nbsp;&nbsp; *</br>
+ &nbsp;&nbsp;&nbsp; **</br>
+ &nbsp;&nbsp; ***</br>
+ &nbsp; ****</br>
+ *****</br>
 **Code Explanation:**
 
 The code uses four variables `i`, `j`, `k` and `row` to generate the pattern. Here's a breakdown of the code:

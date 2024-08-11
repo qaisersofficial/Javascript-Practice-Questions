@@ -18,7 +18,7 @@ The code uses three variables `i`, `j` and `row` to generate the pattern. Here's
 ## Outer Loop
 ==========================
 
-### for (i = 1; i <= 5; i++) { ... }
+### for (i = 1; i <= 5; i++) { ... } 
 The outer loop iterates 5 times, generating each row of the pattern.
 
 ## Generating Asterisks and Spaces

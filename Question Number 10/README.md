@@ -15,3 +15,8 @@ This JavaScript program generates a pattern of asterisks (`*`) and prints it to 
  **Code Explanation:**
 
 The code uses three variables `i`, `j` and `row` to generate the pattern. Here's a breakdown of the code:
+## Outer Loop
+==========================
+
+### for (i = 1; i <= 5; i++) { ... }
+The outer loop iterates 5 times, generating each row of the pattern.

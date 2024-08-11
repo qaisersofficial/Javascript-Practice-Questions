@@ -25,3 +25,8 @@ The outer loop iterates 5 times, generating each row of the pattern.
 ==========================
 ### ffor (j = 1; j <= 6 - i; j++) { row += "*"; row += " "; }
 The inner loop generates the asterisks (`*`) and spaces for the current row. The number of asterisks and spaces decreases by 1 for each row, creating the descending pattern. The loop runs `6 - i` times, where `i` is the current row number.
+
+## Printing the Row
+==========================
+### console.log(row);
+After the inner loop completes, the `console.log(row)` statement prints the completed row to the console.

@@ -20,3 +20,8 @@ The code uses three variables `i`, `j` and `row` to generate the pattern. Here's
 
 ### for (i = 1; i <= 5; i++) { ... }
 The outer loop iterates 5 times, generating each row of the pattern.
+
+## Generating Asterisks and Spaces
+==========================
+### ffor (j = 1; j <= 6 - i; j++) { row += "*"; row += " "; }
+The inner loop generates the asterisks (`*`) and spaces for the current row. The number of asterisks and spaces decreases by 1 for each row, creating the descending pattern. The loop runs `6 - i` times, where `i` is the current row number.

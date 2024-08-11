@@ -8,4 +8,5 @@ let i,j,k;
     for( k=1; k<=i;k++){
        row+="*"
     }
+    console.log(row);
 }

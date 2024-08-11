@@ -6,7 +6,7 @@ This JavaScript program generates a pattern of asterisks (`*`) and prints it to 
 ## pattern
 ==========================
    </br >
-&nbsp*</br>
+ &nbsp; &nbsp; &nbsp; &nbsp; *</br>
    **</br>
   ***</br>
  ****</br>

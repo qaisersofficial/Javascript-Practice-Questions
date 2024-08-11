@@ -11,3 +11,7 @@ This JavaScript program generates a pattern of asterisks (`*`) and prints it to 
  ***</br>
  **</br>
  *</br>
+
+ **Code Explanation:**
+
+The code uses three variables `i`, `j` and `row` to generate the pattern. Here's a breakdown of the code:

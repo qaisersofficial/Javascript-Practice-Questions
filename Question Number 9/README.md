@@ -7,9 +7,9 @@ This JavaScript program generates a pattern of asterisks (`*`) and prints it to 
 ==========================
    </br >
  &nbsp; &nbsp; &nbsp; &nbsp; *</br>
-   **</br>
-  ***</br>
- ****</br>
+ &nbsp; &nbsp; &nbsp;   **</br>
+ &nbsp; &nbsp; ***</br>
+ &nbsp; ****</br>
 *****</br>
 **Code Explanation:**
 

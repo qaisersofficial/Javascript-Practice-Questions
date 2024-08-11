@@ -30,3 +30,11 @@ The inner loop generates the asterisks (`*`) and spaces for the current row. The
 ==========================
 ### console.log(row);
 After the inner loop completes, the `console.log(row)` statement prints the completed row to the console.
+
+**Logic Summary:**
+
+The code generates a pattern of asterisks and spaces by iterating 5 times (outer loop) and generating a decreasing number of asterisks and spaces for each row (inner loop). The number of asterisks and spaces decreases by 1 for each row, creating the descending pattern.
+
+**Run it:**
+
+ Simply copy and paste the code into a JavaScript environment, such as a browser console or a Node.js runtime, and run it to see the pattern in action!

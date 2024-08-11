@@ -15,4 +15,4 @@ The program uses two nested `for` loops to generate the pattern. The outer loop 
 
 ## **Run it:**
 
- Simply copy and paste the code into a JavaScript environment, such as a browser console or a Node.js runtime, and run it to see the pattern in action! 
+ Simply copy and paste the code into a JavaScript environment, such as a browser console or a Node.js runtime, and run it to see the pattern in action!  

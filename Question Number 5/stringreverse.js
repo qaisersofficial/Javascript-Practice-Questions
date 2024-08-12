@@ -13,11 +13,19 @@
 
 // split() ,  reverse(),  join()
 
-function revstr (Any_string){
-    let split_string = Any_string.split("");
-    let Rev_array = split_string.reverse();
-    let join_Array = Rev_array.join(""); 
+// function revstr (Any_string){
+//     let split_string = Any_string.split("");
+//     let Rev_array = split_string.reverse();
+//     let join_Array = Rev_array.join(""); 
 
-    return join_Array;
+//     return join_Array;
+// }
+// console.log(revstr("i am currently practing javascript Questions"));
+
+// chaining these three function together
+
+function reversestring(Any_string)
+{
+   return Any_string.split("").reverse("").join("");
 }
-console.log(revstr("i am currently practing javascript Questions"));
+console.log(reversestring("Consistency matters in journey of pragramming!"))

@@ -28,3 +28,4 @@ function reversestring(Any_string)
 {
    return Any_string.split("").reverse("").join("");
 }
+console.log(reversestring("Consistency matters in journey of pragramming!"))

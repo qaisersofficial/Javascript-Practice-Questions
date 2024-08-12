@@ -24,6 +24,7 @@
 
 // chaining these three function together
 
-function reversestring(Any_string){
-   
+function reversestring(Any_string)
+{
+   return Any_string.split("").reverse("").join("");
 }

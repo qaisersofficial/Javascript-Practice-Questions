@@ -23,3 +23,7 @@
 // console.log(revstr("i am currently practing javascript Questions"));
 
 // chaining these three function together
+
+function reversestring(Any_string){
+   
+}

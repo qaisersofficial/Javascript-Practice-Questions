@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 12</title>
+  </head>
+  <body>
+    <h1>Question Number 12</h1>
+    <p>
+      Write the code that prompt an input from user and check wheather the
+      number is prime or not!
+    </p>
+  </body>
+  <script>
+let input = +prompt("Please enter any Number expect 0 (0 mean end of program)");
+let prime_num = true;
+
+for (let i = 2; i * i <= input; i++) {     
+  if (input % i === 0) {
+    prime_num = false;
+    break;
+  }
+}
+
+if (prime_num) {
+  alert("The number is a prime number");
+} else {
+  alert("The number is not a prime number");
+}
+  </script>
+</html>

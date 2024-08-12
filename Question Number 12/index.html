@@ -13,6 +13,20 @@
     </p>
   </body>
   <script>
-    
+let input = +prompt("Please enter any Number expect 0 (0 mean end of program)");
+let prime_num = true;
+
+for (let i = 2; i * i <= input; i++) {     
+  if (input % i === 0) {
+    prime_num = false;
+    break;
+  }
+}
+
+if (prime_num) {
+  alert("The number is a prime number");
+} else {
+  alert("The number is not a prime number");
+}
   </script>
 </html>

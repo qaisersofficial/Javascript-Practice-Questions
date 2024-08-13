@@ -64,6 +64,9 @@ input[type=button], .arithmetic{
     color: white;
     font-weight: 700;
 }
+.number{
+    background-color: rgba(83, 81, 81, 0.831);
+}
 .greybutton{
     background-color: rgba(185, 184, 184, 0.927);
 }
@@ -74,4 +77,15 @@ input[type=text]{
    text-align: right ;
    width: fit-content;
    border: none;
+}
+.arithmetic:hover{
+    color: rgb(228, 177, 48);
+    background-color: white;
+    font-weight: 700;
+}
+.greybutton:hover{
+    background-color: rgba(103, 102, 102, 0.927);
+}
+.number:hover{
+    background-color: rgba(185, 184, 184, 0.927);
 }

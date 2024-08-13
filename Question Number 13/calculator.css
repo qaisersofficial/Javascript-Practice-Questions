@@ -7,6 +7,10 @@ background-color: black;
     height: 75vh;
     width: 50%;
     margin: 0 auto;
+    border-radius: 20px;
+  
+    box-shadow: inset 34px 34px 50px #ffffff3d,
+                inset -34px -34px 50px #ffffff3d;
 }
 .container{
     height: 100%;
@@ -21,7 +25,8 @@ background-color: black;
     display: grid;
     grid-template-columns:repeat(4,1fr); 
     gap: 10px;
-    margin: 5px;
+    margin-left: 45px ;
+
 }
 .result{
    
@@ -32,20 +37,41 @@ background-color: black;
     margin-right:5%;
     margin-top: 5%;
 }
-.result .f_output{
+.result #f_output{
     position:absolute;
     bottom:0;
-    right:0;
-    font-size: 50px;
-    color: white;
+    right:0;   
 }
-.inputs > div{
-    border: 2px solid green;
-    height: 80px;
-    width: 80px;
-}
+
 .inputs > div:nth-child(17) {
     grid-column: span 2; /* Last div should span 2 columns */
+   
+}
+input[type=button], .arithmetic{
+    height: 80px;
+    width: 80px;
+    border-radius:50% ;
+    border: none;
+    font-size: 35px;
+    transition: background-color 0.3s;
+}
+.input17 > input[type=button]{
     width: 200px;
-
+    border-radius: 50px ;
+}
+.arithmetic{
+    background-color: rgb(228, 177, 48);
+    color: white;
+    font-weight: 700;
+}
+.greybutton{
+    background-color: rgba(185, 184, 184, 0.927);
+}
+input[type=text]{
+    background-color: transparent;
+    color: white;
+    font-size: 50px;
+   text-align: right ;
+   width: fit-content;
+   border: none;
 }

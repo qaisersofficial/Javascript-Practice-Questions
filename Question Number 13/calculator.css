@@ -20,6 +20,10 @@ body{
 .inputs{
     border: 2px solid black;
     height: 80%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr); 
+    gap: 10px;
+    margin: 5px;
 }
 .result{
     border: 2px solid red;
@@ -35,4 +39,14 @@ body{
     bottom:0;
     right:0;
     font-size: 50px;
+}
+.inputs div{
+    border: 2px solid green;
+    height: 80px;
+    width: 80px;
+}
+.inputs > div:nth-child(17) {
+    grid-column: span 2; /* Last div should span 3 columns */
+    width: 200px;
+
 }

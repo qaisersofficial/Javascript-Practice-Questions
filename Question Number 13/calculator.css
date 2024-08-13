@@ -15,11 +15,11 @@ body{
 }
 .output{
     border: 2px solid black;
-    height: 20%;
+    height: 15%;
 }
 .inputs{
     border: 2px solid black;
-    height: 80%;
+    height: 82%;
     display: grid;
     grid-template-columns:repeat(4,1fr); 
     gap: 10px;
@@ -27,7 +27,7 @@ body{
 }
 .result{
     border: 2px solid red;
-    height: 50%;
+    height: 60%;
     width: 95%;
     position:relative;
     float:left;
@@ -46,7 +46,7 @@ body{
     width: 80px;
 }
 .inputs > div:nth-child(17) {
-    grid-column: span 2; /* Last div should span 3 columns */
+    grid-column: span 2; /* Last div should span 2 columns */
     width: 200px;
 
 }

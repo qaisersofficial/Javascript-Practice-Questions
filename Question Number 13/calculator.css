@@ -21,3 +21,18 @@ body{
     border: 2px solid black;
     height: 80%;
 }
+.result{
+    border: 2px solid red;
+    height: 50%;
+    width: 95%;
+    position:relative;
+    float:left;
+    margin-right:5%;
+    margin-top: 5%;
+}
+.result .f_output{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size: 50px;
+}

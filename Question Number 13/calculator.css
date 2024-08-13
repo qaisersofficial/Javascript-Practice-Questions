@@ -8,3 +8,16 @@ body{
     width: 50%;
     margin: 0 auto;
 }
+.container{
+    border:2px solid black;
+    height: 100%;
+    display:block;
+}
+.output{
+    border: 2px solid black;
+    height: 20%;
+}
+.inputs{
+    border: 2px solid black;
+    height: 80%;
+}

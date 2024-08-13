@@ -1,6 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 40px;
 }
 .main_container{
 background-color: black;

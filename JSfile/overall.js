@@ -87,7 +87,12 @@
  
         //   console.log( x ?? y);   //null
 
-          let x ;
-          let y ;
+        //   let x ;
+        //   let y ;
   
-           console.log( x ?? y);   //undefined
+        //    console.log( x ?? y);   //undefined
+
+           let x = undefined ;
+          let y = undefined ;
+  
+           console.log( x ?? y);   //nothing will show in output

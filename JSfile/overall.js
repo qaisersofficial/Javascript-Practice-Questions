@@ -140,7 +140,7 @@
         //     console.log("1 is greater than 0");
         // }
 
-        let Qaisers_age = 23;
+        // let Qaisers_age = 23;
         
         // if(age>=18){
         //     console.log("Qaiser Ali is adult");
@@ -178,10 +178,10 @@
     //     console.log(`Name: ${name}`);
     //     console.log(`Age: ${age}`);
     // }
-    function line(){
-        console.log(`\n\n--------------------------------------\n`)
+    // function line(){
+    //     console.log(`\n\n--------------------------------------\n`)
 
-    }
+    // }
 
     // info( undefined,  "Qaiser Ali", 23); //function call
 
@@ -243,17 +243,34 @@
 
 //objects 
 
-    let admin = {               //admin object contain 4 properties
-        name: "Qaiser Ali",
-        age: 23,
-        university: "University of Gujrat",
-        city: "Gujrat",
+    // let admin = {               //admin object contain 4 properties
+    //     name: "Qaiser Ali",
+    //     age: 23,
+    //     university: "University of Gujrat",
+    //     city: "Gujrat",
 
-        checkage(age){
-            return (age >= 18) ? `Hello Mr. ${this.name}` : "not allowed"
+    //     checkage(age){
+    //         return (age >= 18) ? `Hello Mr. ${this.name}` : "not allowed"
             
-        }
-    }
+    //     }
+    // }
     // console.log(admin);
-    console.log(admin.name , "from " + admin.city);
-   console.log( admin.checkage(admin.age));
+//     console.log(admin.name , "from " + admin.city);
+//    console.log( admin.checkage(admin.age));
+
+// Classes in javascript 
+        //with the class keyword we can create a blueprint 
+
+        class car{
+            constructor( model, year ){
+                this.model = model;
+                this.year = year;
+                }
+            age(){
+                const date = new Date()
+                return date.getFullYear() - this.year;
+            }
+        }
+        const myCar = new car( 2021, 2021);
+        console.log(myCar.model);
+        console.log(myCar.age());

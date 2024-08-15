@@ -166,8 +166,17 @@
         //  console.log(add(10,5));  //15
 
     //fucntion with no parameter
-    function Salam(){
-        console.log("Aslam-o-Alaikum ");
+    // function Salam(){
+    //     console.log("Aslam-o-Alaikum ");
+    // }
+
+    // Salam();
+
+    //function with parameter with default value
+    function info( salam = "Aslam-o-Alaikum! ", name, age,){
+        console.log(salam);
+        console.log(`Name: ${name}`);
+        console.log(`Age: ${age}`);
     }
 
-    Salam();
+    info( undefined,  "Qaiser Ali", 23);

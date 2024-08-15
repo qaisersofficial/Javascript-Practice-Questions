@@ -132,3 +132,10 @@
         // console.log( 1 + 1);   //2
     
         //Hence proved, logical and arithmetic operators are not equal.
+    //if/ else
+        if (1<0){
+            console.log("1 is less than 0");
+        }else
+        {
+            console.log("1 is greater than 0");
+        }

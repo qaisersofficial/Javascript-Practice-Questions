@@ -220,14 +220,22 @@
 // Return the calculated result
 // ====================================================
 
-function combine( a, b, c){
-    let result =  a * b  / c;
-    return "The result for this expression {( a * b ) / c} is " + result;
-}
-            let r1 = combine(6,6,2);
-            console.log(r1);
-            line();
-            let r2 = combine(10,20,5);
-            console.log(r2);
-            line();
+// function combine( a, b, c){
+//     let result =  a * b  / c;
+//     return "The result for this expression {( a * b ) / c} is " + result;
+// }
+//             let r1 = combine(6,6,2);
+//             console.log(r1);
+//             line();
+//             let r2 = combine(10,20,5);
+//             console.log(r2);
+//             line();
             
+
+//arrow function
+
+let combine = (a,b,c)=>{
+    return (a*b)/c;
+};
+ let r1 = combine(6,6,2);
+ console.log(r1);

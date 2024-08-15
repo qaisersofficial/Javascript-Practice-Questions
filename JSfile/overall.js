@@ -179,4 +179,13 @@
         console.log(`Age: ${age}`);
     }
 
-    info( undefined,  "Qaiser Ali", 23);
+    info( undefined,  "Qaiser Ali", 23); //function call
+
+    //same thing with return keyword
+
+    function info( salam = "Aslam-o-Alaikum! ", name, age,){
+       return salam + `\nName: ${name}` + `\nAge: ${age}`;
+    }
+
+    let calling_variable = info( undefined,  "Qaiser Ali", 23); //function call
+    console.log(calling_variable);

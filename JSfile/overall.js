@@ -82,7 +82,12 @@
 
         //  console.log( x ?? y);   //null
 
-         let x ;
-         let y = null;
+        //  let x ;
+        //  let y = null;
  
-          console.log( x ?? y);   //null
+        //   console.log( x ?? y);   //null
+
+          let x ;
+          let y ;
+  
+           console.log( x ?? y);   //undefined

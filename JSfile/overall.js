@@ -22,7 +22,14 @@
     // let str2 = " and i am practicing javascript from scratch.";
     // console.log( `${str1}` + `${str2}`) ; // good practice 
 
-    let number = 23 ;
-    let string1 = "Qaiser Ali, "
-    console.log(string1 + number);
+    // let number = 23 ;
+    // let string1 = "Qaiser Ali, "
+    // console.log(string1 + number);  //Qaiser Ali, 23
+
+
+    //- operator
+    console.log( 10 - 5 ); //5
+    console.log( "10" - 5); //5
+    console.log( 10 - "5"); //5
+    console.log( "10" - "5"); //5
 

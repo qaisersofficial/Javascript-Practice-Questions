@@ -234,8 +234,19 @@
 
 //arrow function
 
-let combine = (a,b,c)=>{
-    return (a*b)/c;
-};
- let r1 = combine(6,6,2);
- console.log(r1);
+// let combine = (a,b,c)=>{
+//     return (a*b)/c;
+// };
+//  let r1 = combine(6,6,2);
+//  console.log(r1);
+
+
+//objects 
+
+    let admin = {               //admin object contain 4 properties
+        name: "Qaiser Ali",
+        age: 23,
+        university: "University of Gujrat",
+        city: "Gujrat",
+    }
+    console.log(admin);

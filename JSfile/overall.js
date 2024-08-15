@@ -160,6 +160,7 @@
         {
             return a+b;
         }
-        let a=10;
-        let b=5;
-        console.log(add(a,b));  //15
+        // let a=10;
+        // let b=5;
+        // console.log(add(a,b));  //15
+         console.log(add(10,5));  //15

@@ -27,22 +27,22 @@
     // console.log(string1 + number);  //Qaiser Ali, 23
 
 
-    // //- operator
+    //- operator
     // console.log( 10 - 5 ); //5
     // console.log( "10" - 5); //5
     // console.log( 10 - "5"); //5
     // console.log( "10" - "5"); //5
 
 
-    // // * operator 
+    // * operator 
     // console.log( 10 * 5 ); //50
     // console.log( "10" * 5); //50
     // console.log( 10 * "5"); //50
     // console.log( "10" * "5"); //50
 
       // / operator 
-      console.log( 10 / 5 ); //2
-      console.log( "10" / 5); //2
-      console.log( 10 / "5"); //2
-      console.log( "10" / "5"); //2
+    //   console.log( 10 / 5 ); //2
+    //   console.log( "10" / 5); //2
+    //   console.log( 10 / "5"); //2
+    //   console.log( "10" / "5"); //2
 

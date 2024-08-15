@@ -56,3 +56,5 @@
     // console.log( "10" == "5") //false
     // console.log( "10" === "5") //nothing will return
     
+    //< operator
+    console.log ( 10 < 5); 

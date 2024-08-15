@@ -262,15 +262,17 @@
         //with the class keyword we can create a blueprint 
 
         class car{
-            constructor( model, year ){
+            constructor( model, year, name ){
                 this.model = model;
                 this.year = year;
+                this.name = name;
                 }
             age(){
                 const date = new Date()
                 return date.getFullYear() - this.year;
             }
         }
-        const myCar = new car( 2021, 2021);
+        const myCar = new car( 2021, 2021, "Toyota");
         console.log(myCar.model);
         console.log(myCar.age());
+        console.log(myCar.name);

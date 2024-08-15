@@ -220,7 +220,7 @@
 // Return the calculated result
 // ====================================================
 
-function combine(){
-    
+function combine( a, b, c){
+
 }
             

@@ -92,7 +92,12 @@
   
         //    console.log( x ?? y);   //undefined
 
-           let x = undefined ;
-          let y = undefined ;
+        //    let x = undefined ;
+        //   let y = undefined ;
   
-           console.log( x ?? y);   //nothing will show in output
+        //    console.log( x ?? y);   //nothing will show in output
+
+        let x = undefined ;
+        let y ;
+  
+           console.log( x ?? y);   //undefined

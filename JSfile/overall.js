@@ -273,6 +273,7 @@
             }
         }
         const myCar = new car( 2021, 2021, "Toyota");
-        console.log(myCar.model);
-        console.log(myCar.age());
-        console.log(myCar.name);
+        // console.log(myCar.model);
+        // console.log(myCar.age());
+        // console.log(myCar.name);
+        console.log (`My ${myCar.name}(${myCar.model}) is ${myCar.age()} years old`);

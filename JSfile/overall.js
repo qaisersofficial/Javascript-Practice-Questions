@@ -156,11 +156,18 @@
 
 
         //functions 
-        function add(a,b)
-        {
-            return a+b;
-        }
-        // let a=10;
-        // let b=5;
-        // console.log(add(a,b));  //15
-         console.log(add(10,5));  //15
+        // function add(a,b)
+        // {
+        //     return a+b;
+        // }
+        //  let a=10;
+        //  let b=5;
+        //  console.log(add(a,b));  //15
+        //  console.log(add(10,5));  //15
+
+    //fucntion with no parameter
+    function Salam(){
+        console.log("Aslam-o-Alaikum ");
+    }
+
+    Salam();

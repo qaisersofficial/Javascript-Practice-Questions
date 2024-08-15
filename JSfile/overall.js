@@ -49,3 +49,4 @@
     // = ooperator
 
      console.log ( 10 = 5); // error
+    console.log ( 10 = 10); //error

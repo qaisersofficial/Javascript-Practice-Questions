@@ -173,17 +173,17 @@
     // Salam();
 
     //function with parameter with default value
-    function info( salam = "Aslam-o-Alaikum! ", name, age,){
-        console.log(salam);
-        console.log(`Name: ${name}`);
-        console.log(`Age: ${age}`);
-    }
+    // function info( salam = "Aslam-o-Alaikum! ", name, age,){
+    //     console.log(salam);
+    //     console.log(`Name: ${name}`);
+    //     console.log(`Age: ${age}`);
+    // }
     function line(){
         console.log(`\n\n--------------------------------------\n`)
 
     }
 
-    info( undefined,  "Qaiser Ali", 23); //function call
+    // info( undefined,  "Qaiser Ali", 23); //function call
 
     //same thing with return keyword
 
@@ -221,6 +221,13 @@
 // ====================================================
 
 function combine( a, b, c){
-
+    let result =  a * b  / c;
+    return "The result for this expression {( a * b ) / c} is " + result;
 }
+            let r1 = combine(6,6,2);
+            console.log(r1);
+            line();
+            let r2 = combine(10,20,5);
+            console.log(r2);
+            line();
             

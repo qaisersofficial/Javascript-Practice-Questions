@@ -8,14 +8,16 @@
 
 // + operator
 
-    console.log( 10 + 5 )   //15
-    console.log( 10 + "5")  //105
-    console.log( "10" + 5); //105
-    console.log( "10" + "5" ); // 105
-    console.log( 10 + 5 + "5" ); //155 -> 10+5=15 + "5"=>> 155
-    console.log( 10 + "5" + "5" ) //1055 
-    console.log( "10" + "5" + "5" );    //1055
-    console.log( 10 + 5 + 5);  //20
-    console.log ("My name is Qaiser Ali" + " and i am practicing javascript from scratch.");
+    // console.log( 10 + 5 )   //15
+    // console.log( 10 + "5")  //105
+    // console.log( "10" + 5); //105
+    // console.log( "10" + "5" ); // 105
+    // console.log( 10 + 5 + "5" ); //155 -> 10+5=15 + "5"=>> 155
+    // console.log( 10 + "5" + "5" ) //1055 
+    // console.log( "10" + "5" + "5" );    //1055
+    // console.log( 10 + 5 + 5);  //20
+    // console.log ("My name is Qaiser Ali" + " and i am practicing javascript from scratch.");
     
-    
+    let str1 = "My name is Qaiser Ali";
+    let str2 = " and i am practicing javascript from scratch.";
+    console.log( str1 + str2);

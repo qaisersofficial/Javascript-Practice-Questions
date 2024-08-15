@@ -149,7 +149,17 @@
         //     console.log("Qaiser Ali is not adult");
         // }
         //if else with other fashion and practice functions in javascirpt
-        function checkage(age){
-            return (age >= 18) ? "Qaiser Ali is adult" : " Qaiser is not Adult"
+        // function checkage(age){
+        //     return (age >= 18) ? "Qaiser Ali is adult" : " Qaiser is not Adult"
+        // }
+        // console.log (  checkage( Qaisers_age ) );   
+
+
+        //functions 
+        function add(a,b)
+        {
+            return a+b;
         }
-        console.log (  checkage( Qaisers_age ) );   
+        let a=10;
+        let b=5;
+        console.log(add(a,b));  //15

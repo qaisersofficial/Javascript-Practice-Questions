@@ -77,7 +77,12 @@
 
         // console.log( x ?? y);   //undefined
 
-        let x = null;
-        let y = null;
+        // let x = null;
+        // let y = null;
 
-         console.log( x ?? y);  
+        //  console.log( x ?? y);   //null
+
+         let x ;
+         let y = null;
+ 
+          console.log( x ?? y);   //null

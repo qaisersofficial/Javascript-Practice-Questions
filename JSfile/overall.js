@@ -102,9 +102,17 @@
   
         //    console.log( x ?? y);   //undefined
 
-        // && operator
+        // && operator (AND)    (A . B)
 
-        console.log( 0 && 0);   //0
-        console.log( 0 && 1);   //0
-        console.log( 1 && 0);   //0
-        console.log( 1 && 1);   //1
+        // console.log( 0 && 0);   //0
+        // console.log( 0 && 1);   //0
+        // console.log( 1 && 0);   //0
+        // console.log( 1 && 1);   //1
+
+        // || operator (OR)     (A + B)
+         
+
+         console.log( 0 || 0);   //0
+         console.log( 0 || 1);   //1
+         console.log( 1 || 0);   //1
+         console.log( 1 || 1);   //1

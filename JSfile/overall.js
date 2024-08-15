@@ -16,5 +16,6 @@
     console.log( 10 + "5" + "5" ) //1055 
     console.log( "10" + "5" + "5" );    //1055
     console.log( 10 + 5 + 5);  //20
+    console.log ("My name is Qaiser Ali" + " and i am practicing javascript from scratch.");
     
     

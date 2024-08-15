@@ -133,9 +133,18 @@
     
         //Hence proved, logical and arithmetic operators are not equal.
     //if/ else
-        if (1<0){
-            console.log("1 is less than 0");
-        }else
-        {
-            console.log("1 is greater than 0");
+        // if (1<0){
+        //     console.log("1 is less than 0");
+        // }else
+        // {
+        //     console.log("1 is greater than 0");
+        // }
+
+        let age = 23;
+        
+        if(age>=18){
+            console.log("Qaiser Ali is adult");
+        }
+        else{
+            console.log("Qaiser Ali is not adult");
         }

@@ -72,7 +72,12 @@
     // ??
 
         //  console.log ( 10 ?? 5); //10
-        let x = null;
-        let y ;
+        // let x = null;
+        // let y ;
 
-        console.log( x ?? y);
+        // console.log( x ?? y);   //undefined
+
+        let x = null;
+        let y = null;
+
+         console.log( x ?? y);  

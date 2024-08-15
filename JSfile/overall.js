@@ -112,12 +112,16 @@
         // || operator (OR)     (A + B)
          
 
-         console.log( 0 || 0);   //0
-         console.log( 0 || 1);   //1
-         console.log( 1 || 0);   //1
-         console.log( 1 || 1);   //1
+        //  console.log( 0 || 0);   //0
+        //  console.log( 0 || 1);   //1
+        //  console.log( 1 || 0);   //1
+        //  console.log( 1 || 1);   //1
 
         
          // when i add (A . B) and (A + B) then i thought, i should try this too, so let try it 
          // (A . B)
-         
+         console.log( 0 * 0);   //0
+         console.log( 0 * 1);   //0
+         console.log( 1 * 0);   //0
+         console.log( 1 * 1);   //1
+    

@@ -248,6 +248,12 @@
         age: 23,
         university: "University of Gujrat",
         city: "Gujrat",
+
+        checkage(age){
+            return (age >= 18) ? `Hello Mr. ${this.name}` : "not allowed"
+            
+        }
     }
     // console.log(admin);
-    console.log(admin.name , "from " + admin.city)
+    console.log(admin.name , "from " + admin.city);
+   console.log( admin.checkage(admin.age));

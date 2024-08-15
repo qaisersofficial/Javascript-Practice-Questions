@@ -23,6 +23,6 @@
     // console.log( `${str1}` + `${str2}`) ; // good practice 
 
     let number = 23 ;
-    let string1 = "Qaiser Ali"
+    let string1 = "Qaiser Ali, "
     console.log(string1 + number);
 

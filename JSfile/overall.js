@@ -20,4 +20,4 @@
     
     let str1 = "My name is Qaiser Ali";
     let str2 = " and i am practicing javascript from scratch.";
-    console.log( str1 + str2);
+    console.log( `${str1}` + `${str2}`) ; // good practice 

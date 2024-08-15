@@ -21,3 +21,8 @@
     // let str1 = "My name is Qaiser Ali";
     // let str2 = " and i am practicing javascript from scratch.";
     // console.log( `${str1}` + `${str2}`) ; // good practice 
+
+    let number = 23 ;
+    let string1 = "Qaiser Ali"
+    console.log(string1 + number);
+

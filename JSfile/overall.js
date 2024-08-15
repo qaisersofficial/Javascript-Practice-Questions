@@ -249,4 +249,5 @@
         university: "University of Gujrat",
         city: "Gujrat",
     }
-    console.log(admin);
+    // console.log(admin);
+    console.log(admin.name , "from " + admin.city)

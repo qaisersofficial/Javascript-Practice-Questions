@@ -18,6 +18,6 @@
     // console.log( 10 + 5 + 5);  //20
     // console.log ("My name is Qaiser Ali" + " and i am practicing javascript from scratch.");
     
-    let str1 = "My name is Qaiser Ali";
-    let str2 = " and i am practicing javascript from scratch.";
-    console.log( `${str1}` + `${str2}`) ; // good practice 
+    // let str1 = "My name is Qaiser Ali";
+    // let str2 = " and i am practicing javascript from scratch.";
+    // console.log( `${str1}` + `${str2}`) ; // good practice 

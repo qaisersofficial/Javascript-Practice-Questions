@@ -261,25 +261,28 @@
 // Classes in javascript 
         //with the class keyword we can create a blueprint 
 
-        class car{
-            constructor( model, year, name, color ){
-                this.model = model;
-                this.year = year;
-                this.name = name;
-                this.color = color;
-                }
-            age(){
-                const date = new Date()
-                return date.getFullYear() - this.year;
-            }
-        }
-        const myCar = new car( 2021, 2021, "Toyota", 'White');
-        const Alicar = new car( 2017, 2017, "Suzuki", "Red");
-        const sharocar = new car( 2020, 2020, "WagonR", "Silver");
+        // class car{
+        //     constructor( model, year, name, color ){
+        //         this.model = model;
+        //         this.year = year;
+        //         this.name = name;
+        //         this.color = color;
+        //         }
+        //     age(){
+        //         const date = new Date()
+        //         return date.getFullYear() - this.year;
+        //     }
+        // }
+        // const myCar = new car( 2021, 2021, "Toyota", 'White');
+        // const Alicar = new car( 2017, 2017, "Suzuki", "Red");
+        // const sharocar = new car( 2020, 2020, "WagonR", "Silver");
 
         // console.log(myCar.model);
         // console.log(myCar.age());
         // console.log(myCar.name);
-        console.log (`My ${myCar.name}(${myCar.model}) is ${myCar.age()} years old having ${myCar.color} color.`);
-        console.log (`Ali's ${Alicar.name}(${Alicar.model}) is ${Alicar.age()} years old having ${Alicar.color} color.`);
-        console.log (`The name of Sharif's car is ${sharocar.name} and it model is ${sharocar.model}, its ${sharocar.name} is  ${sharocar.age()} years old. The color of ${sharocar.name} is ${sharocar.color}.`);
+        // console.log (`My ${myCar.name}(${myCar.model}) is ${myCar.age()} years old having ${myCar.color} color.`);
+        // console.log (`Ali's ${Alicar.name}(${Alicar.model}) is ${Alicar.age()} years old having ${Alicar.color} color.`);
+        // console.log (`The name of Sharif's car is ${sharocar.name} and it model is ${sharocar.model}, its ${sharocar.name} is  ${sharocar.age()} years old. The color of ${sharocar.name} is ${sharocar.color}.`);
+
+
+        

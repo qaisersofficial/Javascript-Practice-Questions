@@ -140,11 +140,16 @@
         //     console.log("1 is greater than 0");
         // }
 
-        let age = 23;
+        let Qaisers_age = 23;
         
-        if(age>=18){
-            console.log("Qaiser Ali is adult");
+        // if(age>=18){
+        //     console.log("Qaiser Ali is adult");
+        // }
+        // else{
+        //     console.log("Qaiser Ali is not adult");
+        // }
+        //if else with other fashion and practice functions in javascirpt
+        function checkage(age){
+            return (age >= 18) ? "Qaiser Ali is adult" : " Qaiser is not Adult"
         }
-        else{
-            console.log("Qaiser Ali is not adult");
-        }
+        console.log (  checkage( Qaisers_age ) );   

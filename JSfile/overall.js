@@ -178,6 +178,10 @@
         console.log(`Name: ${name}`);
         console.log(`Age: ${age}`);
     }
+    function line(){
+        console.log(`\n\n--------------------------------------\n`)
+
+    }
 
     info( undefined,  "Qaiser Ali", 23); //function call
 
@@ -187,5 +191,17 @@
        return salam + `\nName: ${name}` + `\nAge: ${age}`;
     }
 
-    let calling_variable = info( undefined,  "Qaiser Ali", 23); //function call
-    console.log(calling_variable);
+    let QA_VAR = info( undefined,  "Qaiser Ali", 23); //function call
+    console.log(QA_VAR);
+    line();
+    let AR_VAR = info( undefined,  "Ali Raza", 24); 
+    console.log(AR_VAR);
+    line();
+    let AH_VAR = info( undefined,  "Adil Hussain", 34); 
+    console.log(AH_VAR);
+    line();
+    let SS_VAR = info( undefined,  "Sharif Saleem", 22); 
+    console.log(SS_VAR);
+    line();
+    let SL_VAR = info( undefined,  "Soban Liaqat", 21); 
+    console.log(SL_VAR);

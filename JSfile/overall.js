@@ -296,7 +296,27 @@
             }
         }
         const student1 = { ...student}
-        console.log(student);
-        student.enroll();
-        console.log(student1);
-        student1.enroll();      //till here i got the the same output of both objects
+        // console.log(student);
+        // student.enroll();
+        // console.log(student1);
+        // student1.enroll();      //till here i got the the same output of both objects
+    
+    // now change the value of one object and see both give the same output or not
+    //if not same then i done with pass by valuee
+    student1.Name = "Sharif Saleem";
+            console.log (student);
+            console.log(student1)
+            //now the output is 
+            // {
+            //     Name: 'Qaiser Ali',
+            //     age: 23,
+            //     institute: 'University of Gujrat.',
+            //     enroll: [Function: enroll]
+            //   }
+            //   {
+            //     Name: 'Sharif Saleem',
+            //     age: 23,
+            //     institute: 'University of Gujrat.',
+            //     enroll: [Function: enroll]
+            //   }
+

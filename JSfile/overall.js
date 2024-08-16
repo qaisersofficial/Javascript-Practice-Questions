@@ -345,3 +345,10 @@
             // }
             // console.log(student1);
             // console.log(student);   //same output. so my object is copied into new object.
+
+
+
+
+
+            // Excercise using objects  
+            //key properties are :::: ?itemName, price, dicount, itemCode. 

@@ -321,9 +321,15 @@
             //   } 
             //copy object by using built-in assign methodd
           //datatype cloned_object_name  
-            const student1 = Object.assign( {} , student );
-            student1.Name = 'Adil Hussain';
-            console.log(student);
-            console.log(student1);
-            student1.enroll();
+            // const student1 = Object.assign( {} , student );
+            // student1.Name = 'Adil Hussain';
+            // console.log(student);
+            // console.log(student1);
+            // student1.enroll();
             //now All set
+
+    // Another way to retrieve the things
+
+            for (let key in student){
+                console.log(key, student[key]);
+            }

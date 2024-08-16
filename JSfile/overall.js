@@ -330,6 +330,12 @@
 
     // Another way to retrieve the things
 
-            for (let key in student){
+            // for (let key in student){
+            //     console.log(key, student[key]);
+            // } //commit message unfortunately written wrong 
+
+            for (let key of Object.keys(student)){
                 console.log(key, student[key]);
-            } //commit message unfortunately written wrong 
+            }
+
+            

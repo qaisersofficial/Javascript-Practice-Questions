@@ -287,14 +287,14 @@
 
         //pass by value in object
 
-        const student = {
-            Name : "Qaiser Ali",
-            age : 23,
-            institute : "University of Gujrat.",
-            enroll(){
-                console.log( `Hello Mr. ${this.Name} you are enrolled in ${this.institute}` );
-            }
-        }
+        // const student = {
+        //     Name : "Qaiser Ali",
+        //     age : 23,
+        //     institute : "University of Gujrat.",
+        //     enroll(){
+        //         console.log( `Hello Mr. ${this.Name} you are enrolled in ${this.institute}` );
+        //     }
+        // }
         // const student1 = { ...student}
         // console.log(student);
         // student.enroll();
@@ -339,9 +339,9 @@
             // }
 
             //copy using for of loop
-            const student1 = {};
-            for ( let key of Object.keys(student)){
-                student1[key] = student[key];
-            }
-            console.log(student1);
-            console.log(student);   //same output. so my object is copied into new object.
+            // const student1 = {};
+            // for ( let key of Object.keys(student)){
+            //     student1[key] = student[key];
+            // }
+            // console.log(student1);
+            // console.log(student);   //same output. so my object is copied into new object.

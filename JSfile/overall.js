@@ -334,8 +334,14 @@
             //     console.log(key, student[key]);
             // } //commit message unfortunately written wrong 
 
-            for (let key of Object.keys(student)){
-                console.log(key, student[key]);
-            }
+            // for (let key of Object.keys(student)){
+            //     console.log(key, student[key]);
+            // }
 
-            
+            //copy using for of loop
+            const student1 = {};
+            for ( let key of Object.keys(student)){
+                student1[key] = student[key];
+            }
+            console.log(student1);
+            console.log(student);   //same output. so my object is copied into new object.

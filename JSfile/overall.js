@@ -295,7 +295,7 @@
                 console.log( `Hello Mr. ${this.Name} you are enrolled in ${this.institute}` );
             }
         }
-        const student1 = { ...student}
+        // const student1 = { ...student}
         // console.log(student);
         // student.enroll();
         // console.log(student1);
@@ -303,9 +303,9 @@
     
     // now change the value of one object and see both give the same output or not
     //if not same then i done with pass by valuee
-    student1.Name = "Sharif Saleem";
-            console.log (student);
-            console.log(student1)
+    // student1.Name = "Sharif Saleem";
+    //         console.log (student);
+    //         console.log(student1);
             //now the output is 
             // {
             //     Name: 'Qaiser Ali',
@@ -318,5 +318,12 @@
             //     age: 23,
             //     institute: 'University of Gujrat.',
             //     enroll: [Function: enroll]
-            //   }
-
+            //   } 
+            //copy object by using built-in assign methodd
+          //datatype cloned_object_name  
+            const student1 = Object.assign( {} , student );
+            student1.Name = 'Adil Hussain';
+            console.log(student);
+            console.log(student1);
+            student1.enroll();
+            //now All set

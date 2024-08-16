@@ -285,4 +285,70 @@
         // console.log (`The name of Sharif's car is ${sharocar.name} and it model is ${sharocar.model}, its ${sharocar.name} is  ${sharocar.age()} years old. The color of ${sharocar.name} is ${sharocar.color}.`);
 
 
-        
+        //pass by value in object
+
+        // const student = {
+        //     Name : "Qaiser Ali",
+        //     age : 23,
+        //     institute : "University of Gujrat.",
+        //     enroll(){
+        //         console.log( `Hello Mr. ${this.Name} you are enrolled in ${this.institute}` );
+        //     }
+        // }
+        // const student1 = { ...student}
+        // console.log(student);
+        // student.enroll();
+        // console.log(student1);
+        // student1.enroll();      //till here i got the the same output of both objects
+    
+    // now change the value of one object and see both give the same output or not
+    //if not same then i done with pass by valuee
+    // student1.Name = "Sharif Saleem";
+    //         console.log (student);
+    //         console.log(student1);
+            //now the output is 
+            // {
+            //     Name: 'Qaiser Ali',
+            //     age: 23,
+            //     institute: 'University of Gujrat.',
+            //     enroll: [Function: enroll]
+            //   }
+            //   {
+            //     Name: 'Sharif Saleem',
+            //     age: 23,
+            //     institute: 'University of Gujrat.',
+            //     enroll: [Function: enroll]
+            //   } 
+            //copy object by using built-in assign methodd
+          //datatype cloned_object_name  
+            // const student1 = Object.assign( {} , student );
+            // student1.Name = 'Adil Hussain';
+            // console.log(student);
+            // console.log(student1);
+            // student1.enroll();
+            //now All set
+
+    // Another way to retrieve the things
+
+            // for (let key in student){
+            //     console.log(key, student[key]);
+            // } //commit message unfortunately written wrong 
+
+            // for (let key of Object.keys(student)){
+            //     console.log(key, student[key]);
+            // }
+
+            //copy using for of loop
+            // const student1 = {};
+            // for ( let key of Object.keys(student)){
+            //     student1[key] = student[key];
+            // }
+            // console.log(student1);
+            // console.log(student);   //same output. so my object is copied into new object.
+
+
+
+
+
+            // Excercise using objects  
+            //key properties are :::: ?itemName, price, dicount, itemCode. 

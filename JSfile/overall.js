@@ -286,3 +286,17 @@
 
 
         //pass by value in object
+
+        const student = {
+            Name : "Qaiser Ali",
+            age : 23,
+            institute : "University of Gujrat.",
+            enroll(){
+                console.log( `Hello Mr. ${this.Name} you are enrolled in ${this.institute}` );
+            }
+        }
+        const student1 = { ...student}
+        console.log(student);
+        student.enroll();
+        console.log(student1);
+        student1.enroll();      //till here i got the the same output of both objects

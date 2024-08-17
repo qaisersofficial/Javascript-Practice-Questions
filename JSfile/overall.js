@@ -845,6 +845,8 @@
         // does every characterstic have mass more than 40?
                 console.log(characteristics.every((ch)=> ch.mass > 40));  //true
         //does every characterstic have blue eues?
+        console.log(characteristics.every((ch)=> ch.eye_color === 'Blue'));  //false
+            
         //is there atleast one male character?
         //is there atleast on characterstic than 200?
 

@@ -636,10 +636,15 @@
 
     //Join 
         let name = [ "Q", "a", "i", "s", "e", "r"];
-      let combine =  name.join(); // without seperator
-      console.log(combine); //Q,a,i,s,e,r
+    //   let combine =  name.join(); // without seperator
+    //   console.log(combine); //Q,a,i,s,e,r
 
       let combinetry2 = name.join(''); // use seperator to avoid , in output 
-      console.log(combinetry2); 
+    //   console.log(combinetry2); 
     //   Q,a,i,s,e,r    using join()
     //   Qaiser         using join('')
+
+    // split
+    let splitname = name.split("");
+
+    console.log( splitname);

@@ -421,14 +421,14 @@
 
 
              //creating object using class expression
-             const employee = class person {
-                constructor(name, age, rank, department, address ) {
-                    this.name = name;
-                    this.age = age;
-                    this.address = address;
-                    this.rank = rank;
-                    this.department = department;
-            }
+            //  const employee = class person {
+            //     constructor(name, age, rank, department, address ) {
+            //         this.name = name;
+            //         this.age = age;
+            //         this.address = address;
+            //         this.rank = rank;
+            //         this.department = department;
+            // }
             //Getter & setter sytax
             // get funcitonname(){
             //     return this.keyname;
@@ -440,9 +440,9 @@
 
             //we can create multiple methods to set, get or any other methodoligy function here
             // example in next when i comment this previous code
-        };        
-        let employee_1 = new employee( "Adil Hussain", 32, "Manager" , "HR", "Norway" );
-        let employee_2 = new employee( "Qaiser Ali", 23, "Front-End Developer", 'IT', 'Pakistan');
+        // };        
+        // let employee_1 = new employee( "Adil Hussain", 32, "Manager" , "HR", "Norway" );
+        // let employee_2 = new employee( "Qaiser Ali", 23, "Front-End Developer", 'IT', 'Pakistan');
 
-        console.log(employee_1);
-        console.log(employee_2);
+        // console.log(employee_1);
+        // console.log(employee_2);

@@ -809,4 +809,19 @@
         const females = characteristics.filter((femalegender)=>{
             return femalegender.gender === 'Female';
     }); 
-    console.log(females);
+    // console.log(females);
+
+        //sort by gender
+            const sortgender = characteristics.sort((ch1, ch2)=>{
+                if (ch1.gender < ch2.gender){
+                    return -1;
+                }
+                if (ch1.gender > ch2.gender){
+                    return 1;
+                }else{
+                    return 0;
+                }
+
+            });
+            console.log(sortgender);
+        

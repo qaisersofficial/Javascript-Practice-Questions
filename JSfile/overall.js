@@ -422,11 +422,16 @@
 
              //creating object using class expression
              const employee = class person {
-                constructor(name, age, rank, department ) {
+                constructor(name, age, rank, department, address ) {
                     this.name = name;
                     this.age = age;
-                    this.location = location;
+                    this.address = address;
                     this.rank = rank;
                     this.department = department;
             }
         };        
+        let employee_1 = new employee( "Adil Hussain", 32, "Manager" , "HR", "Norway" );
+        let employee_2 = new employee( "Qaiser Ali", 23, "Front-End Developer", 'IT', 'Pakistan');
+
+        console.log(employee_1);
+        console.log(employee_2);

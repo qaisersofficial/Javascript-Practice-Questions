@@ -352,3 +352,122 @@
 
             // Excercise using objects  
             //key properties are :::: ?itemName, price, dicount, itemCode. 
+
+            //simple object creation
+                    // let product = {
+                    //         itemName : "flower",
+                    //         price : 50,
+                    //         discount : 20,
+                    //         itemCode : "PK1974"
+                    // }
+               
+                    
+            //object by factory function
+
+            //         function product (itemName, price, discount, itemCode){
+            //             return {
+            //                 itemName : itemName,
+            //                 price : price, 
+            //                 discount : discount,
+            //                 itemCode : itemCode
+            //             }
+            //         };
+            // const bed = product( "Bed", 60000, 20, "PK-135");
+            // console.log( `The item you selected is ${bed.itemName} available only in RS/-${bed.price}  with ${bed.discount}% discount and its item code is ${bed.itemCode}`);
+
+//**************************************************************************************************************************************************************************************************************************************************************************** */
+            //object by constructor function
+
+            //         function Product(itemName, price, discount, itemCode)
+            //         {
+            //             this.itemName = itemName;
+            //             this.price = price;
+            //             this.discount = discount;
+            //             this.itemCode = itemCode;
+
+            //             //lets find the discount value of the price
+            //             // with Function anonymous
+            //             this.discountvalue = function (){
+            //                 return this.price * this.discount / 100;
+            //             }
+            //             //lets find the final value of the product
+                        
+            //             this.Totalamount = function (){
+            //                 return this.price - this.discountvalue();
+            //             }
+            //         };
+            //     const laptop =  new Product( "Lenovo" , 140000, 35, "PK-201");
+            // console.log( `The item you selected is ${laptop.itemName} available only in RS/-${laptop.price}  with ${laptop.discount}% discount and its item code is ${laptop.itemCode}`);     
+            // console.log(`The discount value is RS/-${laptop.discountvalue()}`);             
+            // console.log(`The Total amount of the product is RS/-${laptop.Totalamount()}`);     
+//**************************************************************************************************************************************************************************************************************************************************************************** */
+        
+            //classes practice
+            //decalring a class
+        // class Animal {
+                //declaring a constructor same as constructor function
+        //         constructor( Name, Age, location) {
+        //             this.Name = Name;
+        //             this.Age = Age;
+        //             this.location = location;
+        //         }
+        // };
+        //creating an object of the class
+        // const dog = new Animal("Bulldog", 5, "Lahore");
+        // console.log(`The animal is ${dog.Name} currently in ${dog.location} and its age is ${dog.Age} years old`);
+        // const cat = new Animal ( "Percian-Cat", 3, "Gujrat");
+        // console.log(`The animal is ${cat.Name} currently in ${cat.location} and its age is ${cat.Age} years old`);
+
+
+
+             //creating object using class expression
+            //  const employee = class person {
+            //     constructor(name, age, rank, department, address ) {
+            //         this.name = name;
+            //         this.age = age;
+            //         this.address = address;
+            //         this.rank = rank;
+            //         this.department = department;
+            // }
+            //Getter & setter sytax
+            // get funcitonname(){
+            //     return this.keyname;
+            // }
+            // set funcitonname(value){
+            //     return this.keyname = value;
+            // }
+
+
+            //we can create multiple methods to set, get or any other methodoligy function here
+            // example in next when i comment this previous code
+        // };        
+        // let employee_1 = new employee( "Adil Hussain", 32, "Manager" , "HR", "Norway" );
+        // let employee_2 = new employee( "Qaiser Ali", 23, "Front-End Developer", 'IT', 'Pakistan');
+
+        // console.log(employee_1);
+        // console.log(employee_2);
+
+
+        //creating method in a class to extend it
+
+            // class Product {
+            //     constructor(name){
+            //         this.name = name;
+            //     }
+            // getname(){
+            //     return this.name + 'is a product';
+            // }
+            // }
+// extend class
+// class HomeAliences extends Product{
+    // constructor(name){
+        // super(name); // the super function call the constructor of its parent class
+    // }
+//     getname(){
+//         return this.name + "is a HomeAlience"
+//     }
+// }
+// let book = new Product ("book(Poet of the East) ");
+// let AC = new HomeAliences( " AC ");
+// console.log(book.getname());
+// console.log(AC.getname());

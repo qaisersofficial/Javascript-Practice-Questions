@@ -402,3 +402,21 @@
             // console.log(`The Total amount of the product is RS/-${laptop.Totalamount()}`);     
 //**************************************************************************************************************************************************************************************************************************************************************************** */
         
+            //classes practice
+            //decalring a class
+        class Animal {
+                //declaring a constructor same as constructor function
+                constructor( Name, Age, location) {
+                    this.Name = Name;
+                    this.Age = Age;
+                    this.location = location;
+                }
+        };
+        //creating an object of the class
+        const dog = new Animal("Bulldog", 5, "Lahore");
+        console.log(`The animal is ${dog.Name} currently in ${dog.location} and its age is ${dog.Age} years old`);
+        const cat = new Animal ( "Percian-Cat", 3, "Gujrat");
+        console.log(`The animal is ${cat.Name} currently in ${cat.location} and its age is ${cat.Age} years old`);
+
+
+        

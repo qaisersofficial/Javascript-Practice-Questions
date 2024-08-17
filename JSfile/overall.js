@@ -450,24 +450,24 @@
 
         //creating method in a class to extend it
 
-            class Product {
-                constructor(name){
-                    this.name = name;
-                }
-            getname(){
-                return this.name + 'is a product';
-            }
-            }
+            // class Product {
+            //     constructor(name){
+            //         this.name = name;
+            //     }
+            // getname(){
+            //     return this.name + 'is a product';
+            // }
+            // }
 // extend class
-class HomeAliences extends Product{
-    constructor(name){
-        super(name); // the super function call the constructor of its parent class
-    }
-    getname(){
-        return this.name + "is a HomeAlience"
-    }
-}
-let book = new Product ("book(Poet of the East) ");
-let AC = new HomeAliences( " AC ");
-console.log(book.getname());
-console.log(AC.getname());
+// class HomeAliences extends Product{
+    // constructor(name){
+        // super(name); // the super function call the constructor of its parent class
+    // }
+//     getname(){
+//         return this.name + "is a HomeAlience"
+//     }
+// }
+// let book = new Product ("book(Poet of the East) ");
+// let AC = new HomeAliences( " AC ");
+// console.log(book.getname());
+// console.log(AC.getname());

@@ -780,6 +780,11 @@
         //GET AN ARRAY OF ALL NAMES
         const names = characteristics.map(character=> character.name);
         console.log(`${names}`);
+
+        //get an array of objects with just name and height properties
+        const propertiesofnames = characteristics.map (character => { return {name: character.name, height: character.height} } )
+        console.log(propertiesofnames);
+        
         
        
         

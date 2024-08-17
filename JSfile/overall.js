@@ -803,6 +803,6 @@
         const males = characteristics.filter((malegender)=>{
                 return malegender.gender === 'Male';
         }) 
-        console.log(males)
+        console.log(males);
 
         

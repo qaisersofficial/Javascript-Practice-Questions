@@ -471,3 +471,7 @@
 // let AC = new HomeAliences( " AC ");
 // console.log(book.getname());
 // console.log(AC.getname());
+
+
+
+// Arrays

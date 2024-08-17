@@ -521,6 +521,10 @@
 
     //shift method -> it will remove first value from array
 
-        number.shift();
-        console.log(number); // [ 2, 3, 4, 5,   6, 7, 8, 9 ]
+        // number.shift();
+        // console.log(number); // [ 2, 3, 4, 5,   6, 7, 8, 9 ]
+
+    // change the value in an array
+    number[5]= "Qaiser Ali";        //value can be any type
+    console.log(number); //[ 1, 2, 3, 4, 5, 'Qaiser Ali', 7, 8, 9 ]
              

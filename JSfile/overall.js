@@ -652,51 +652,51 @@
 
         //filter method
 
-        let countries = [
-            {
-                name: "China",
-                population: 1444216107
-            },
-            {
-                name: "India",
-                population: 1407563842
-            },
-            {
-                name: "United States",
-                population: 335506737
-            },
-            {
-                name: "Indonesia",
-                population: 276361783
-            },
-            {
-                name: "Pakistan",
-                population: 243447728
-            },
-            {
-                name: "Brazil",
-                population: 216446902
-            },
-            {
-                name: "Nigeria",
-                population: 225082083
-            },
-            {
-                name: "Bangladesh",
-                population: 172954319
-            },
-            {
-                name: "Russia",
-                population: 142338437
-            },
-            {
-                name: "Mexico",
-                population: 129929472
-            }
-        ];
+        // let countries = [
+        //     {
+        //         name: "China",
+        //         population: 1444216107
+        //     },
+        //     {
+        //         name: "India",
+        //         population: 1407563842
+        //     },
+        //     {
+        //         name: "United States",
+        //         population: 335506737
+        //     },
+        //     {
+        //         name: "Indonesia",
+        //         population: 276361783
+        //     },
+        //     {
+        //         name: "Pakistan",
+        //         population: 243447728
+        //     },
+        //     {
+        //         name: "Brazil",
+        //         population: 216446902
+        //     },
+        //     {
+        //         name: "Nigeria",
+        //         population: 225082083
+        //     },
+        //     {
+        //         name: "Bangladesh",
+        //         population: 172954319
+        //     },
+        //     {
+        //         name: "Russia",
+        //         population: 142338437
+        //     },
+        //     {
+        //         name: "Mexico",
+        //         population: 129929472
+        //     }
+        // ];
         
         // console.log( countries.filter(country =>  country.population > 240000000))
         
         //map 
 
-        console.log( countries.map(country =>  country.population * 2))
+        // console.log( countries.map(country =>  country.population * 2))

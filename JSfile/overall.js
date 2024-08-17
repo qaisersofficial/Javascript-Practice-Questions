@@ -395,7 +395,6 @@
                         this.Totalamount = function (){
                             return this.price - this.discountvalue();
                         }
-
                     };
                 const laptop =  new Product( "Lenovo" , 140000, 35, "PK-201");
             console.log( `The item you selected is ${laptop.itemName} available only in RS/-${laptop.price}  with ${laptop.discount}% discount and its item code is ${laptop.itemCode}`);     

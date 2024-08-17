@@ -508,4 +508,7 @@
         // another way to declare an array using object
 
         const number = new Array ( 1,2,3,4,5,6,7,8,9);
-             console.log(number[number.length - 1]); // 9
+            //  console.log(number[number.length - 1]); // 9
+             number.push("10");
+             console.log(number[number.length - 1]); // 10
+             

@@ -471,3 +471,384 @@
 // let AC = new HomeAliences( " AC ");
 // console.log(book.getname());
 // console.log(AC.getname());
+
+
+
+// Arrays
+    //index        "0"         "1"        "2"
+// const hobbies = [ "Cooking", "Sports", "Reading" ];
+// console.log(hobbies[0]);
+// console.log(hobbies[1]);
+// console.log(hobbies[2]);
+
+// some built-in functions of Array
+
+// hobbies.push('Working');    //at index 3 because array store consecutive data.
+// console.log(hobbies);   //[ 'Cooking', 'Sports', 'Reading', 'Working' ]
+
+//since this approach is not good so,
+// console.log(
+//     hobbies.findIndex( (item) => {      //is use to find the index but we should have to pass a anonymous function
+//         return item === 'Reading';
+//     }));
+
+
+    //i follow this belowed approach
+
+    // const index = hobbies.findIndex( (item) => {     
+        // return item === 'Reading';});
+
+        // console.log(index);  // output 2
+
+        // const number = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
+    //how to access the  value at last index of array
+        // console.log ( number [number.length - 1]);
+
+
+        // another way to declare an array using object
+
+        // const number = new Array ( 1,2,3,4,5,6,7,8,9);
+            //  console.log(number[number.length - 1]); // 9
+            //  number.push("10");
+            //  console.log(number[number.length - 1]); // 10
+            //  number.unshift("0");   //it will add at 0 indeex
+            //  console.log(number); // ['0', 1, 2, 3, 4, 5,   6, 7, 8, 9 ]
+              
+    //pop
+            // number.pop();   //remove the last element from the array
+            // console.log (number); // [ 1, 2, 3, 4, 5,   6, 7, 8 ] 
+            //9 is removed from the array
+
+    //shift method -> it will remove first value from array
+
+        // number.shift();
+        // console.log(number); // [ 2, 3, 4, 5,   6, 7, 8, 9 ]
+
+    // change the value in an array
+            // number[5]= "Qaiser Ali";        //value can be any type
+            // console.log(number); //[ 1, 2, 3, 4, 5, 'Qaiser Ali', 7, 8, 9 ]
+    
+        // const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        // console.log(names);
+            //find the index of any element of an array
+
+            // console.log(names.indexOf("Qaiser Ali"));   //this will start finding  from first index
+            // console.log(names.lastIndexOf("Qaiser Ali")); //this will start finding  from last index
+    // it return true or false
+            // console.log(names.includes ("Qaiser Ali"));     //it helps to search
+
+
+        // find specific element from object that uses an array 
+
+        // let groups = [{
+        //     name1 : "Qaiser Ali",
+        //     name2 : "Sharif Saleem"
+        // },{
+        //     name1 : " Ali Haider",
+        //     name2 : "Qadoos Awan"
+        // },{
+        //     name1 : " Soban Safdar",
+        //     name2 : " Ali Raza"
+        // },{
+        //     name1 : " Shamoon Nasr",
+        //     name2 : " Ameer Hamza"
+        // },{
+        //     name1 : " Usama Gondal",
+        //     name2 : " Saif Minhas"
+        // }]
+
+        // console.log(groups.includes( "Qaiser Ali"));    //false
+        //false bcz includes only use in primitive datatypes not in reference datatype
+        // so i will use here find() that i had used early 
+
+        //     let index = groups.find( (element) => {
+        //         return element.name1 === 'Qaiser Ali';
+        //     });
+        // console.log(index); 
+
+        //concate method 
+
+        // const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        // const cnames = [ 'Muhammad Fateh Ali', ' Muhammad Orhan Ali', 'Muhammad Rayyan Ali', 'Noor Ul Ain' ];
+        // console.log(names.concat(cnames)); //it will concate both arrays
+// slice method
+        //  let tnames = names.concat(cnames);
+            // console.log ( tnames.slice( 4, 7));
+// the values before index 4 and the values after 7 index will remove 
+    // output-> [ 'Qaiser Ali', 'Muhammad Fateh Ali', ' Muhammad Orhan Ali' ]
+
+
+// spread operators(...)
+        // basically it also use to concate two arrays
+
+// let tnames = [...names, ...cnames];
+//     console.log(tnames);
+    //output:
+    // [
+    //     'Adil Hussain',
+    //     'Yasir Ali',
+    //     'Nasir Ali',
+    //     'Murtaza Ali',
+    //     'Qaiser Ali',
+    //     'Muhammad Fateh Ali',
+    //     ' Muhammad Orhan Ali',
+    //     'Muhammad Rayyan Ali',
+    //     'Noor Ul Ain'
+    //   ]
+      
+// For loop
+    // const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        // for (let i = 0; i < names.length ; i++){
+        //     console.log(names[i]);
+        // }
+        //output:
+        // Adil Hussain
+        // Yasir Ali
+        // Nasir Ali
+        // Murtaza  Ali
+        // Qaiser Ali
+//using for of loop
+    // for ( let name of names){
+
+    //     console.log(name);
+    // }
+     //output: same output as for loop
+        // Adil Hussain
+        // Yasir Ali
+        // Nasir Ali
+        // Murtaza  Ali
+        // Qaiser Ali
+
+
+
+        //forEach method
+
+        // names.forEach((name, index)=>{
+        //     console.log(name, index);
+        // })
+         //output: same output as for loop and for of loop
+        // Adil Hussain
+        // Yasir Ali
+        // Nasir Ali
+        // Murtaza  Ali
+        // Qaiser Ali
+
+
+    //Join 
+        // let name = [ "Q", "a", "i", "s", "e", "r"];
+    //   let combine =  name.join(); // without seperator
+    //   console.log(combine); //Q,a,i,s,e,r
+
+    //   let combinetry2 = name.join(''); // use seperator to avoid , in output 
+    //   console.log(combinetry2); 
+    //   Q,a,i,s,e,r    using join()
+    //   Qaiser         using join('')
+
+    // split
+    // let splitname = name.split("");
+
+    // console.log( splitname);
+
+
+        //filter method
+
+        // let countries = [
+        //     {
+        //         name: "China",
+        //         population: 1444216107
+        //     },
+        //     {
+        //         name: "India",
+        //         population: 1407563842
+        //     },
+        //     {
+        //         name: "United States",
+        //         population: 335506737
+        //     },
+        //     {
+        //         name: "Indonesia",
+        //         population: 276361783
+        //     },
+        //     {
+        //         name: "Pakistan",
+        //         population: 243447728
+        //     },
+        //     {
+        //         name: "Brazil",
+        //         population: 216446902
+        //     },
+        //     {
+        //         name: "Nigeria",
+        //         population: 225082083
+        //     },
+        //     {
+        //         name: "Bangladesh",
+        //         population: 172954319
+        //     },
+        //     {
+        //         name: "Russia",
+        //         population: 142338437
+        //     },
+        //     {
+        //         name: "Mexico",
+        //         population: 129929472
+        //     }
+        // ];
+        
+        // console.log( countries.filter(country =>  country.population > 240000000))
+        
+        //map 
+
+        // console.log( countries.map(country =>  country.population * 2))
+
+
+        // EXERCISE ON AN ARRAY
+
+        // const characteristics = [
+        //     {
+        //         name: "Ahmed",
+        //         height: "180 ",
+        //         mass: "75 ",
+        //         eye_color: "Brown",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Fatimah",
+        //         height: "165 ",
+        //         mass: "60 ",
+        //         eye_color: "Black",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Hassan",
+        //         height: "175 ",
+        //         mass: "70 ",
+        //         eye_color: "Green",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Aisha",
+        //         height: "160 ",
+        //         mass: "55 ",
+        //         eye_color: "Hazel",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Omar",
+        //         height: "182 ",
+        //         mass: "78 ",
+        //         eye_color: "Blue",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Khadijah",
+        //         height: "170 ",
+        //         mass: "65 ",
+        //         eye_color: "Brown",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Ali",
+        //         height: "178 ",
+        //         mass: "72 ",
+        //         eye_color: "Black",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Maryam",
+        //         height: "162 ",
+        //         mass: "158 ",
+        //         eye_color: "Green",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Yusuf",
+        //         height: "185 ",
+        //         mass: "80 ",
+        //         eye_color: "Brown",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Zainab",
+        //         height: "168 ",
+        //         mass: "162 ",
+        //         eye_color: "Hazel",
+        //         gender: "Female"
+        //     }
+        // ];
+
+        //GET AN ARRAY OF ALL NAMES
+        // const names = characteristics.map(character=> character.name);
+        // console.log(`${names}`);
+
+        //get an array of objects with just name and height properties
+        // const propertiesofnames = characteristics.map (character => { return {name: character.name, height: character.height} } )
+        // console.log(propertiesofnames);
+        
+        //get the total height of all characterstics
+
+            // const totalheight = characteristics.reduce(( prevheight, character ) => {
+            //     return prevheight + Number(character.height);
+            // },0)
+            // console.log('Total height of all characters is: '+  totalheight + " in centimeters")
+       
+        // get characteritics with mass greater than 100
+
+        // const greatermass = characteristics.filter( (char)=>{
+        //         return char.mass > 100;
+        // });
+        // console.log(greatermass);
+
+        //get all male characterstics
+        // const males = characteristics.filter((malegender)=>{
+        //         return malegender.gender === 'Male';
+        // }); 
+        // console.log(males);
+        
+        //get all female characterstics
+    //     const females = characteristics.filter((femalegender)=>{
+    //         return femalegender.gender === 'Female';
+    // }); 
+    // console.log(females);
+
+        //sort by gender
+            // const sortgender = characteristics.sort((ch1, ch2)=>{
+            //     if (ch1.gender < ch2.gender){
+            //         return -1;
+            //     }
+            //     if (ch1.gender > ch2.gender){
+            //         return 1;
+            //     }else{
+            //         return 0;
+            //     }
+
+            // });
+            // console.log(sortgender);
+
+            //sort by name
+
+            // const sortbyname = characteristics.sort((ch1, ch2)=>{
+            //     if (ch1.name > ch2.name){  
+            //         return -1;
+            //     }
+            //     if (ch1.name > ch2.name){
+            //         return 1;
+            //     }else{
+            //         return 0;
+            //     }
+
+            // });
+            // console.log(sortbyname);
+
+
+
+        // does every characterstic have mass more than 40?
+                // console.log(characteristics.every((ch)=> ch.mass > 40));  //true
+        //does every characterstic have blue eues?
+        // console.log(characteristics.every((ch)=> ch.eye_color === 'Blue'));  //false
+            
+        //is there atleast one male character?
+                // console.log(characteristics.some((char)=> char.gender === 'Male')) // true
+        //is there atleast on characterstic than 200?
+                // console.log(characteristics.some((char)=> char.height > 200)) // false
+//=====================================================================================================================================

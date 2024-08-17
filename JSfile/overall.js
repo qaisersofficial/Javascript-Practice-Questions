@@ -608,11 +608,25 @@
         // Murtaza  Ali
         // Qaiser Ali
 //using for of loop
-    for ( let name of names){
+    // for ( let name of names){
 
-        console.log(name);
-    }
+    //     console.log(name);
+    // }
      //output: same output as for loop
+        // Adil Hussain
+        // Yasir Ali
+        // Nasir Ali
+        // Murtaza  Ali
+        // Qaiser Ali
+
+
+
+        //forEach method
+
+        names.forEach((name, index)=>{
+            console.log(name);
+        })
+         //output: same output as for loop and for of loop
         // Adil Hussain
         // Yasir Ali
         // Nasir Ali

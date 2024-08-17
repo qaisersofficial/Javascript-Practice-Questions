@@ -476,14 +476,14 @@
 
 // Arrays
     //index        "0"         "1"        "2"
-const hobbies = [ "Cooking", "Sports", "Reading" ];
+// const hobbies = [ "Cooking", "Sports", "Reading" ];
 // console.log(hobbies[0]);
 // console.log(hobbies[1]);
 // console.log(hobbies[2]);
 
 // some built-in functions of Array
 
-hobbies.push('Working');    //at index 3 because array store consecutive data.
+// hobbies.push('Working');    //at index 3 because array store consecutive data.
 // console.log(hobbies);   //[ 'Cooking', 'Sports', 'Reading', 'Working' ]
 
 //since this approach is not good so,
@@ -495,7 +495,9 @@ hobbies.push('Working');    //at index 3 because array store consecutive data.
 
     //i follow this belowed approach
 
-    const index = hobbies.findIndex( (item) => {     
-        return item === 'Reading';});
+    // const index = hobbies.findIndex( (item) => {     
+        // return item === 'Reading';});
 
-        console.log(index);  
+        // console.log(index);  // output 2
+
+    

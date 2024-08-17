@@ -528,11 +528,35 @@
             // number[5]= "Qaiser Ali";        //value can be any type
             // console.log(number); //[ 1, 2, 3, 4, 5, 'Qaiser Ali', 7, 8, 9 ]
     
-        const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        // const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
         // console.log(names);
             //find the index of any element of an array
 
             // console.log(names.indexOf("Qaiser Ali"));   //this will start finding  from first index
             // console.log(names.lastIndexOf("Qaiser Ali")); //this will start finding  from last index
     // it return true or false
-            console.log(names.includes ("Qaiser Ali"));     //it helps to search
+            // console.log(names.includes ("Qaiser Ali"));     //it helps to search
+
+
+        // find specific element from object that uses an array 
+
+        let groups = [{
+            name1 : "Qaiser Ali",
+            name2 : "Sharif Saleem"
+        },{
+            name1 : " Ali Haider",
+            name2 : "Qadoos Awan"
+        },{
+            name1 : " Soban Safdar",
+            name2 : " Ali Raza"
+        },{
+            name1 : " Shamoon Nasr",
+            name2 : " Ameer Hamza"
+        },{
+            name1 : " Usama Gondal",
+            name2 : " Saif Minhas"
+        }]
+
+        console.log(groups.includes( "Qaiser Ali"));    //false
+        //false bcz includes only use in primitive datatypes not in reference datatype
+        // so i will use here find() that i had used early 

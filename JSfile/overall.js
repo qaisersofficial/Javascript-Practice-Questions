@@ -515,7 +515,12 @@
             //  console.log(number); // ['0', 1, 2, 3, 4, 5,   6, 7, 8, 9 ]
               
     //pop
-            number.pop();   //remove the last element from the array
-            console.log (number); // ['0', 1, 2, 3, 4, 5,   6, 7, 8 ] 
+            // number.pop();   //remove the last element from the array
+            // console.log (number); // [ 1, 2, 3, 4, 5,   6, 7, 8 ] 
             //9 is removed from the array
+
+    //shift method -> it will remove first value from array
+
+        number.shift();
+        console.log(number); // [ 2, 3, 4, 5,   6, 7, 8, 9 ]
              

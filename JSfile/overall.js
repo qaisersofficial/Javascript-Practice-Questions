@@ -461,7 +461,7 @@
 // extend class
 class HomeAliences extends Product{
     constructor(name){
-        super(name);
+        super(name); // the super function call the constructor of its parent class
     }
     getname(){
         return this.name + "is a HomeAlience"

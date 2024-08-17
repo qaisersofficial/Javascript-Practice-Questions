@@ -598,10 +598,21 @@
       
 // For loop
     const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
-        for (let i = 0; i < names.length ; i++){
-            console.log(names[i]);
-        }
+        // for (let i = 0; i < names.length ; i++){
+        //     console.log(names[i]);
+        // }
         //output:
+        // Adil Hussain
+        // Yasir Ali
+        // Nasir Ali
+        // Murtaza  Ali
+        // Qaiser Ali
+//using for of loop
+    for ( let name of names){
+
+        console.log(name);
+    }
+     //output: same output as for loop
         // Adil Hussain
         // Yasir Ali
         // Nasir Ali

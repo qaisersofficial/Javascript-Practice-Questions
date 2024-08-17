@@ -477,6 +477,13 @@
 // Arrays
     //index        "0"         "1"        "2"
 const hobbies = [ "Cooking", "Sports", "Reading" ];
-console.log(hobbies[0]);
-console.log(hobbies[1]);
-console.log(hobbies[2]);
+// console.log(hobbies[0]);
+// console.log(hobbies[1]);
+// console.log(hobbies[2]);
+
+// some built-in functions of Array
+
+hobbies.push('Working');    //at index 3 because array store consecutive data.
+console.log(hobbies);   //[ 'Cooking', 'Sports', 'Reading', 'Working' ]
+
+

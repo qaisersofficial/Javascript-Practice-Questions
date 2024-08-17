@@ -779,30 +779,34 @@
 
         //GET AN ARRAY OF ALL NAMES
         const names = characteristics.map(character=> character.name);
-        console.log(`${names}`);
+        // console.log(`${names}`);
 
         //get an array of objects with just name and height properties
         const propertiesofnames = characteristics.map (character => { return {name: character.name, height: character.height} } )
-        console.log(propertiesofnames);
+        // console.log(propertiesofnames);
         
         //get the total height of all characterstics
 
             const totalheight = characteristics.reduce(( prevheight, character ) => {
                 return prevheight + Number(character.height);
             },0)
-            console.log('Total height of all characters is: '+  totalheight + " in centimeters")
+            // console.log('Total height of all characters is: '+  totalheight + " in centimeters")
        
         // get characteritics with mass greater than 100
 
         const greatermass = characteristics.filter( (char)=>{
                 return char.mass > 100;
         });
-        console.log(greatermass);
+        // console.log(greatermass);
 
-        //get all male characterstic
+        //get all male characterstics
         const males = characteristics.filter((malegender)=>{
                 return malegender.gender === 'Male';
         }); 
-        console.log(males);
-
+        // console.log(males);
         
+        //get all female characterstics
+        const females = characteristics.filter((femalegender)=>{
+            return femalegender.gender === 'Female';
+    }); 
+    console.log(females);

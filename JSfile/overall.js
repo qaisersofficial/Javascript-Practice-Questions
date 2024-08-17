@@ -475,3 +475,8 @@
 
 
 // Arrays
+    //index        "0"         "1"        "2"
+const hobbies = [ "Cooking", "Sports", "Reading" ];
+console.log(hobbies[0]);
+console.log(hobbies[1]);
+console.log(hobbies[2]);

@@ -354,9 +354,23 @@
             //key properties are :::: ?itemName, price, dicount, itemCode. 
 
             //simple object creation
-                    let product = {
-                            itemName : "flower",
-                            price : 50,
-                            discount : 20,
-                            itemCode : "PK1974"
-                    }
+                    // let product = {
+                    //         itemName : "flower",
+                    //         price : 50,
+                    //         discount : 20,
+                    //         itemCode : "PK1974"
+                    // }
+               
+                    
+            //object by factory function
+
+                    function product (itemName, price, discount, itemCode){
+                        return {
+                            itemName : itemName,
+                            price : price, 
+                            discount : discount,
+                            itemCode : itemCode
+                        }
+                    };
+            const bed = product( "Bed", 60000, 20, "PK-135");
+            console.log( `The item you selected is ${bed.itemName} available only in RS/-${bed.price}  with ${bed.discount}% discount and its item code is ${bed.itemCode}`);

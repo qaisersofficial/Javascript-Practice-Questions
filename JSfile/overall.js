@@ -850,5 +850,4 @@
         //is there atleast one male character?
                 console.log(characteristics.some((char)=> char.gender === 'Male')) // true
         //is there atleast on characterstic than 200?
-
-        
+                console.log(characteristics.some((char)=> char.height > 200)) // false

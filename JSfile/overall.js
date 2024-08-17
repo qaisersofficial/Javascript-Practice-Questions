@@ -507,7 +507,7 @@
 
         // another way to declare an array using object
 
-        const number = new Array ( 1,2,3,4,5,6,7,8,9);
+        // const number = new Array ( 1,2,3,4,5,6,7,8,9);
             //  console.log(number[number.length - 1]); // 9
             //  number.push("10");
             //  console.log(number[number.length - 1]); // 10
@@ -525,6 +525,11 @@
         // console.log(number); // [ 2, 3, 4, 5,   6, 7, 8, 9 ]
 
     // change the value in an array
-    number[5]= "Qaiser Ali";        //value can be any type
-    console.log(number); //[ 1, 2, 3, 4, 5, 'Qaiser Ali', 7, 8, 9 ]
-             
+            // number[5]= "Qaiser Ali";        //value can be any type
+            // console.log(number); //[ 1, 2, 3, 4, 5, 'Qaiser Ali', 7, 8, 9 ]
+    
+        const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        console.log(names);
+            //find the index of any element of an array
+
+            console.log(names.indexOf("Qaiser Ali"));

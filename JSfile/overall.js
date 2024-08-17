@@ -624,7 +624,7 @@
         //forEach method
 
         names.forEach((name, index)=>{
-            console.log(name);
+            console.log(name, index);
         })
          //output: same output as for loop and for of loop
         // Adil Hussain

@@ -695,5 +695,8 @@
             }
         ];
         
-        console.log( countries.filter(country =>  country.population > 240000000))
+        // console.log( countries.filter(country =>  country.population > 240000000))
         
+        //map 
+
+        console.log( countries.map(country =>  country.population * 2))

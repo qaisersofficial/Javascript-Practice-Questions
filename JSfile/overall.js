@@ -375,7 +375,7 @@
             // const bed = product( "Bed", 60000, 20, "PK-135");
             // console.log( `The item you selected is ${bed.itemName} available only in RS/-${bed.price}  with ${bed.discount}% discount and its item code is ${bed.itemCode}`);
 
-
+//**************************************************************************************************************************************************************************************************************************************************************************** */
             //object by constructor function
 
                     function Product(itemName, price, discount, itemCode)
@@ -390,7 +390,16 @@
                         this.discountvalue = function (){
                             return this.price * this.discount / 100;
                         }
+                        //lets find the final value of the product
+                        
+                        this.Totalamount = function (){
+                            return this.price - this.discountvalue();
+                        }
+
                     };
                 const laptop =  new Product( "Lenovo" , 140000, 35, "PK-201");
             console.log( `The item you selected is ${laptop.itemName} available only in RS/-${laptop.price}  with ${laptop.discount}% discount and its item code is ${laptop.itemCode}`);     
             console.log(`The discount value is RS/-${laptop.discountvalue()}`);             
+            console.log(`The Total amount of the product is RS/-${laptop.Totalamount()}`);     
+//**************************************************************************************************************************************************************************************************************************************************************************** */
+        

@@ -436,6 +436,10 @@
             // set funcitonname(value){
             //     return this.keyname = value;
             // }
+
+
+            //we can create multiple methods to set, get or any other methodoligy function here
+            // example in next when i comment this previous code
         };        
         let employee_1 = new employee( "Adil Hussain", 32, "Manager" , "HR", "Norway" );
         let employee_2 = new employee( "Qaiser Ali", 23, "Front-End Developer", 'IT', 'Pakistan');

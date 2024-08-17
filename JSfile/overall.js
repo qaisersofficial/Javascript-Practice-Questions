@@ -540,22 +540,22 @@
 
         // find specific element from object that uses an array 
 
-        let groups = [{
-            name1 : "Qaiser Ali",
-            name2 : "Sharif Saleem"
-        },{
-            name1 : " Ali Haider",
-            name2 : "Qadoos Awan"
-        },{
-            name1 : " Soban Safdar",
-            name2 : " Ali Raza"
-        },{
-            name1 : " Shamoon Nasr",
-            name2 : " Ameer Hamza"
-        },{
-            name1 : " Usama Gondal",
-            name2 : " Saif Minhas"
-        }]
+        // let groups = [{
+        //     name1 : "Qaiser Ali",
+        //     name2 : "Sharif Saleem"
+        // },{
+        //     name1 : " Ali Haider",
+        //     name2 : "Qadoos Awan"
+        // },{
+        //     name1 : " Soban Safdar",
+        //     name2 : " Ali Raza"
+        // },{
+        //     name1 : " Shamoon Nasr",
+        //     name2 : " Ameer Hamza"
+        // },{
+        //     name1 : " Usama Gondal",
+        //     name2 : " Saif Minhas"
+        // }]
 
         // console.log(groups.includes( "Qaiser Ali"));    //false
         //false bcz includes only use in primitive datatypes not in reference datatype
@@ -568,8 +568,8 @@
 
         //concate method 
 
-        const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
-        const cnames = [ 'Muhammad Fateh Ali', ' Muhammad Orhan Ali', 'Muhammad Rayyan Ali', 'Noor Ul Ain' ];
+        // const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        // const cnames = [ 'Muhammad Fateh Ali', ' Muhammad Orhan Ali', 'Muhammad Rayyan Ali', 'Noor Ul Ain' ];
         // console.log(names.concat(cnames)); //it will concate both arrays
 // slice method
         //  let tnames = names.concat(cnames);
@@ -581,8 +581,8 @@
 // spread operators(...)
         // basically it also use to concate two arrays
 
-let tnames = [...names, ...cnames];
-    console.log(tnames);
+// let tnames = [...names, ...cnames];
+//     console.log(tnames);
     //output:
     // [
     //     'Adil Hussain',
@@ -596,3 +596,14 @@ let tnames = [...names, ...cnames];
     //     'Noor Ul Ain'
     //   ]
       
+// For loop
+    const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        for (let i = 0; i < names.length ; i++){
+            console.log(names[i]);
+        }
+        //output:
+        // Adil Hussain
+        // Yasir Ali
+        // Nasir Ali
+        // Murtaza  Ali
+        // Qaiser Ali

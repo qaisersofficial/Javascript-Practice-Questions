@@ -364,13 +364,26 @@
                     
             //object by factory function
 
-                    function product (itemName, price, discount, itemCode){
-                        return {
-                            itemName : itemName,
-                            price : price, 
-                            discount : discount,
-                            itemCode : itemCode
-                        }
+            //         function product (itemName, price, discount, itemCode){
+            //             return {
+            //                 itemName : itemName,
+            //                 price : price, 
+            //                 discount : discount,
+            //                 itemCode : itemCode
+            //             }
+            //         };
+            // const bed = product( "Bed", 60000, 20, "PK-135");
+            // console.log( `The item you selected is ${bed.itemName} available only in RS/-${bed.price}  with ${bed.discount}% discount and its item code is ${bed.itemCode}`);
+
+
+            //object by constructor function
+
+                    function Product(itemName, price, discount, itemCode)
+                    {
+                        this.itemName = itemName;
+                        this.price = price;
+                        this.discount = discount;
+                        this.itemCode = itemCode;
                     };
-            const bed = product( "Bed", 60000, 20, "PK-135");
-            console.log( `The item you selected is ${bed.itemName} available only in RS/-${bed.price}  with ${bed.discount}% discount and its item code is ${bed.itemCode}`);
+                const laptop =  new Product( "Lenovo" , 140000, 50, "PK-201");
+            console.log( `The item you selected is ${laptop.itemName} available only in RS/-${laptop.price}  with ${laptop.discount}% discount and its item code is ${laptop.itemCode}`);                    

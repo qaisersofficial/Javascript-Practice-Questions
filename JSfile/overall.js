@@ -570,6 +570,9 @@
 
         const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
         const cnames = [ 'Muhammad Fateh Ali', ' Muhammad Orhan Ali', 'Muhammad Rayyan Ali', 'Noor Ul Ain' ];
-        console.log(names.concat(cnames)); //it will concate both arrays
-
-         
+        // console.log(names.concat(cnames)); //it will concate both arrays
+// slice method
+         let tnames = names.concat(cnames);
+            console.log ( tnames.slice( 4, 7));
+// the values before index 4 and the values after 7 index will remove 
+    // output-> [ 'Qaiser Ali', 'Muhammad Fateh Ali', ' Muhammad Orhan Ali' ]

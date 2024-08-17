@@ -798,5 +798,11 @@
                 return char.mass > 100;
         });
         console.log(greatermass);
-        
+
+        //get all male characterstic
+        const males = characteristics.filter((malegender)=>{
+                return malegender.gender === 'Male';
+        }) 
+        console.log(males)
+
         

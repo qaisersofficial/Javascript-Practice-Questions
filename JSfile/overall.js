@@ -802,7 +802,7 @@
         //get all male characterstic
         const males = characteristics.filter((malegender)=>{
                 return malegender.gender === 'Male';
-        }) 
+        }); 
         console.log(males);
 
         

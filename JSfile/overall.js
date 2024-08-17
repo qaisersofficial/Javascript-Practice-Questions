@@ -500,4 +500,6 @@
 
         // console.log(index);  // output 2
 
-    
+        const number = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
+    //how to access the  value at last index of array
+        console.log ( number [number.length - 1]);

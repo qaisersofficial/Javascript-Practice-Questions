@@ -484,6 +484,10 @@ const hobbies = [ "Cooking", "Sports", "Reading" ];
 // some built-in functions of Array
 
 hobbies.push('Working');    //at index 3 because array store consecutive data.
-console.log(hobbies);   //[ 'Cooking', 'Sports', 'Reading', 'Working' ]
+// console.log(hobbies);   //[ 'Cooking', 'Sports', 'Reading', 'Working' ]
 
 
+console.log(
+    hobbies.findIndex( (item) => {      //is use to find the index but we should have to pass a anonymous function
+        return item === 'Reading';
+    }));

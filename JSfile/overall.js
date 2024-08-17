@@ -352,3 +352,11 @@
 
             // Excercise using objects  
             //key properties are :::: ?itemName, price, dicount, itemCode. 
+
+            //simple object creation
+                    let product = {
+                            itemName : "flower",
+                            price : 50,
+                            discount : 20,
+                            itemCode : "PK1974"
+                    }

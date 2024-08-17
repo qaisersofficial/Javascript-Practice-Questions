@@ -707,70 +707,70 @@
         const characteristics = [
             {
                 name: "Ahmed",
-                height: "180 cm",
+                height: "180 ",
                 mass: "75 kg",
                 eye_color: "Brown",
                 gender: "Male"
             },
             {
                 name: "Fatimah",
-                height: "165 cm",
+                height: "165 ",
                 mass: "60 kg",
                 eye_color: "Black",
                 gender: "Female"
             },
             {
                 name: "Hassan",
-                height: "175 cm",
+                height: "175 ",
                 mass: "70 kg",
                 eye_color: "Green",
                 gender: "Male"
             },
             {
                 name: "Aisha",
-                height: "160 cm",
+                height: "160 ",
                 mass: "55 kg",
                 eye_color: "Hazel",
                 gender: "Female"
             },
             {
                 name: "Omar",
-                height: "182 cm",
+                height: "182 ",
                 mass: "78 kg",
                 eye_color: "Blue",
                 gender: "Male"
             },
             {
                 name: "Khadijah",
-                height: "170 cm",
+                height: "170 ",
                 mass: "65 kg",
                 eye_color: "Brown",
                 gender: "Female"
             },
             {
                 name: "Ali",
-                height: "178 cm",
+                height: "178 ",
                 mass: "72 kg",
                 eye_color: "Black",
                 gender: "Male"
             },
             {
                 name: "Maryam",
-                height: "162 cm",
+                height: "162 ",
                 mass: "58 kg",
                 eye_color: "Green",
                 gender: "Female"
             },
             {
                 name: "Yusuf",
-                height: "185 cm",
+                height: "185 ",
                 mass: "80 kg",
                 eye_color: "Brown",
                 gender: "Male"
             },
             {
                 name: "Zainab",
-                height: "168 cm",
+                height: "168 ",
                 mass: "62 kg",
                 eye_color: "Hazel",
                 gender: "Female"
@@ -785,6 +785,11 @@
         const propertiesofnames = characteristics.map (character => { return {name: character.name, height: character.height} } )
         console.log(propertiesofnames);
         
-        
+        //get the total height of all characterstics
+
+            const totalheight = characteristics.reduce(( prevheight, character ) => {
+                return prevheight + Number(character.height);
+            },0)
+            console.log('Total height of all characters is: '+  totalheight + " in centimeters")
        
         

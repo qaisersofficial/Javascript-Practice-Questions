@@ -532,4 +532,5 @@
         console.log(names);
             //find the index of any element of an array
 
-            console.log(names.indexOf("Qaiser Ali"));
+            console.log(names.indexOf("Qaiser Ali"));   //this will start finding  from first index
+            console.log(names.lastIndexOf("Qaiser Ali")); //this will start finding  from last index

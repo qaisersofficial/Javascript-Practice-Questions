@@ -823,5 +823,21 @@
                 }
 
             });
-            console.log(sortgender);
+            // console.log(sortgender);
+
+            //sort by name
+
+            const sortbyname = characteristics.sort((ch1, ch2)=>{
+                if (ch1.name < ch2.name){  
+                    return -1;
+                }
+                if (ch1.name > ch2.name){
+                    return 1;
+                }else{
+                    return 0;
+                }
+
+            });
+            console.log(sortbyname);
+
         

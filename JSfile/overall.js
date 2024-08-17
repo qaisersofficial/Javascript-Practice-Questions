@@ -529,8 +529,10 @@
             // console.log(number); //[ 1, 2, 3, 4, 5, 'Qaiser Ali', 7, 8, 9 ]
     
         const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
-        console.log(names);
+        // console.log(names);
             //find the index of any element of an array
 
-            console.log(names.indexOf("Qaiser Ali"));   //this will start finding  from first index
-            console.log(names.lastIndexOf("Qaiser Ali")); //this will start finding  from last index
+            // console.log(names.indexOf("Qaiser Ali"));   //this will start finding  from first index
+            // console.log(names.lastIndexOf("Qaiser Ali")); //this will start finding  from last index
+    // it return true or false
+            console.log(names.includes ("Qaiser Ali"));     //it helps to search

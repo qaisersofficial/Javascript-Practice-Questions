@@ -384,6 +384,13 @@
                         this.price = price;
                         this.discount = discount;
                         this.itemCode = itemCode;
+
+                        //lets find the discount value of the price
+                        // with Function anonymous
+                        this.discountvalue = function (){
+                            return this.price * this.discount / 100;
+                        }
                     };
-                const laptop =  new Product( "Lenovo" , 140000, 50, "PK-201");
-            console.log( `The item you selected is ${laptop.itemName} available only in RS/-${laptop.price}  with ${laptop.discount}% discount and its item code is ${laptop.itemCode}`);                    
+                const laptop =  new Product( "Lenovo" , 140000, 35, "PK-201");
+            console.log( `The item you selected is ${laptop.itemName} available only in RS/-${laptop.price}  with ${laptop.discount}% discount and its item code is ${laptop.itemCode}`);     
+            console.log(`The discount value is RS/-${laptop.discountvalue()}`);             

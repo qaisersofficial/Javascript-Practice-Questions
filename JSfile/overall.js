@@ -557,6 +557,11 @@
             name2 : " Saif Minhas"
         }]
 
-        console.log(groups.includes( "Qaiser Ali"));    //false
+        // console.log(groups.includes( "Qaiser Ali"));    //false
         //false bcz includes only use in primitive datatypes not in reference datatype
         // so i will use here find() that i had used early 
+
+            let index = groups.find( (element) => {
+                return element.name1 === 'Qaiser Ali';
+            });
+        console.log(index); 

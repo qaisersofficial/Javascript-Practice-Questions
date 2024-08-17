@@ -704,150 +704,151 @@
 
         // EXERCISE ON AN ARRAY
 
-        const characteristics = [
-            {
-                name: "Ahmed",
-                height: "180 ",
-                mass: "75 ",
-                eye_color: "Brown",
-                gender: "Male"
-            },
-            {
-                name: "Fatimah",
-                height: "165 ",
-                mass: "60 ",
-                eye_color: "Black",
-                gender: "Female"
-            },
-            {
-                name: "Hassan",
-                height: "175 ",
-                mass: "70 ",
-                eye_color: "Green",
-                gender: "Male"
-            },
-            {
-                name: "Aisha",
-                height: "160 ",
-                mass: "55 ",
-                eye_color: "Hazel",
-                gender: "Female"
-            },
-            {
-                name: "Omar",
-                height: "182 ",
-                mass: "78 ",
-                eye_color: "Blue",
-                gender: "Male"
-            },
-            {
-                name: "Khadijah",
-                height: "170 ",
-                mass: "65 ",
-                eye_color: "Brown",
-                gender: "Female"
-            },
-            {
-                name: "Ali",
-                height: "178 ",
-                mass: "72 ",
-                eye_color: "Black",
-                gender: "Male"
-            },
-            {
-                name: "Maryam",
-                height: "162 ",
-                mass: "158 ",
-                eye_color: "Green",
-                gender: "Female"
-            },
-            {
-                name: "Yusuf",
-                height: "185 ",
-                mass: "80 ",
-                eye_color: "Brown",
-                gender: "Male"
-            },
-            {
-                name: "Zainab",
-                height: "168 ",
-                mass: "162 ",
-                eye_color: "Hazel",
-                gender: "Female"
-            }
-        ];
+        // const characteristics = [
+        //     {
+        //         name: "Ahmed",
+        //         height: "180 ",
+        //         mass: "75 ",
+        //         eye_color: "Brown",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Fatimah",
+        //         height: "165 ",
+        //         mass: "60 ",
+        //         eye_color: "Black",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Hassan",
+        //         height: "175 ",
+        //         mass: "70 ",
+        //         eye_color: "Green",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Aisha",
+        //         height: "160 ",
+        //         mass: "55 ",
+        //         eye_color: "Hazel",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Omar",
+        //         height: "182 ",
+        //         mass: "78 ",
+        //         eye_color: "Blue",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Khadijah",
+        //         height: "170 ",
+        //         mass: "65 ",
+        //         eye_color: "Brown",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Ali",
+        //         height: "178 ",
+        //         mass: "72 ",
+        //         eye_color: "Black",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Maryam",
+        //         height: "162 ",
+        //         mass: "158 ",
+        //         eye_color: "Green",
+        //         gender: "Female"
+        //     },
+        //     {
+        //         name: "Yusuf",
+        //         height: "185 ",
+        //         mass: "80 ",
+        //         eye_color: "Brown",
+        //         gender: "Male"
+        //     },
+        //     {
+        //         name: "Zainab",
+        //         height: "168 ",
+        //         mass: "162 ",
+        //         eye_color: "Hazel",
+        //         gender: "Female"
+        //     }
+        // ];
 
         //GET AN ARRAY OF ALL NAMES
-        const names = characteristics.map(character=> character.name);
+        // const names = characteristics.map(character=> character.name);
         // console.log(`${names}`);
 
         //get an array of objects with just name and height properties
-        const propertiesofnames = characteristics.map (character => { return {name: character.name, height: character.height} } )
+        // const propertiesofnames = characteristics.map (character => { return {name: character.name, height: character.height} } )
         // console.log(propertiesofnames);
         
         //get the total height of all characterstics
 
-            const totalheight = characteristics.reduce(( prevheight, character ) => {
-                return prevheight + Number(character.height);
-            },0)
+            // const totalheight = characteristics.reduce(( prevheight, character ) => {
+            //     return prevheight + Number(character.height);
+            // },0)
             // console.log('Total height of all characters is: '+  totalheight + " in centimeters")
        
         // get characteritics with mass greater than 100
 
-        const greatermass = characteristics.filter( (char)=>{
-                return char.mass > 100;
-        });
+        // const greatermass = characteristics.filter( (char)=>{
+        //         return char.mass > 100;
+        // });
         // console.log(greatermass);
 
         //get all male characterstics
-        const males = characteristics.filter((malegender)=>{
-                return malegender.gender === 'Male';
-        }); 
+        // const males = characteristics.filter((malegender)=>{
+        //         return malegender.gender === 'Male';
+        // }); 
         // console.log(males);
         
         //get all female characterstics
-        const females = characteristics.filter((femalegender)=>{
-            return femalegender.gender === 'Female';
-    }); 
+    //     const females = characteristics.filter((femalegender)=>{
+    //         return femalegender.gender === 'Female';
+    // }); 
     // console.log(females);
 
         //sort by gender
-            const sortgender = characteristics.sort((ch1, ch2)=>{
-                if (ch1.gender < ch2.gender){
-                    return -1;
-                }
-                if (ch1.gender > ch2.gender){
-                    return 1;
-                }else{
-                    return 0;
-                }
+            // const sortgender = characteristics.sort((ch1, ch2)=>{
+            //     if (ch1.gender < ch2.gender){
+            //         return -1;
+            //     }
+            //     if (ch1.gender > ch2.gender){
+            //         return 1;
+            //     }else{
+            //         return 0;
+            //     }
 
-            });
+            // });
             // console.log(sortgender);
 
             //sort by name
 
-            const sortbyname = characteristics.sort((ch1, ch2)=>{
-                if (ch1.name > ch2.name){  
-                    return -1;
-                }
-                if (ch1.name > ch2.name){
-                    return 1;
-                }else{
-                    return 0;
-                }
+            // const sortbyname = characteristics.sort((ch1, ch2)=>{
+            //     if (ch1.name > ch2.name){  
+            //         return -1;
+            //     }
+            //     if (ch1.name > ch2.name){
+            //         return 1;
+            //     }else{
+            //         return 0;
+            //     }
 
-            });
+            // });
             // console.log(sortbyname);
 
 
 
         // does every characterstic have mass more than 40?
-                console.log(characteristics.every((ch)=> ch.mass > 40));  //true
+                // console.log(characteristics.every((ch)=> ch.mass > 40));  //true
         //does every characterstic have blue eues?
-        console.log(characteristics.every((ch)=> ch.eye_color === 'Blue'));  //false
+        // console.log(characteristics.every((ch)=> ch.eye_color === 'Blue'));  //false
             
         //is there atleast one male character?
-                console.log(characteristics.some((char)=> char.gender === 'Male')) // true
+                // console.log(characteristics.some((char)=> char.gender === 'Male')) // true
         //is there atleast on characterstic than 200?
-                console.log(characteristics.some((char)=> char.height > 200)) // false
+                // console.log(characteristics.some((char)=> char.height > 200)) // false
+//=====================================================================================================================================

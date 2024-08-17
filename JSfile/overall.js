@@ -848,6 +848,7 @@
         console.log(characteristics.every((ch)=> ch.eye_color === 'Blue'));  //false
             
         //is there atleast one male character?
+                console.log(characteristics.some((char)=> char.gender === 'Male')) // true
         //is there atleast on characterstic than 200?
 
         

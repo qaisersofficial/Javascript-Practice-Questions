@@ -778,6 +778,8 @@
         ];
 
         //GET AN ARRAY OF ALL NAMES
+        const names = characteristics.map(character=> character.name);
+        console.log(`${names}`);
         
        
         

@@ -561,7 +561,15 @@
         //false bcz includes only use in primitive datatypes not in reference datatype
         // so i will use here find() that i had used early 
 
-            let index = groups.find( (element) => {
-                return element.name1 === 'Qaiser Ali';
-            });
-        console.log(index); 
+        //     let index = groups.find( (element) => {
+        //         return element.name1 === 'Qaiser Ali';
+        //     });
+        // console.log(index); 
+
+        //concate method 
+
+        const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+        const cnames = [ 'Muhammad Fateh Ali', ' Muhammad Orhan Ali', 'Muhammad Rayyan Ali', 'Noor Ul Ain' ];
+        console.log(names.concat(cnames)); //it will concate both arrays
+
+         

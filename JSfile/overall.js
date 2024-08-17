@@ -511,8 +511,11 @@
             //  console.log(number[number.length - 1]); // 9
             //  number.push("10");
             //  console.log(number[number.length - 1]); // 10
-             number.unshift("0");   //it will add at 0 indeex
-             console.log(number); // ['0', 1, 2, 3, 4, 5,   6, 7, 8, 9 ]
+            //  number.unshift("0");   //it will add at 0 indeex
+            //  console.log(number); // ['0', 1, 2, 3, 4, 5,   6, 7, 8, 9 ]
               
-
+    //pop
+            number.pop();   //remove the last element from the array
+            console.log (number); // ['0', 1, 2, 3, 4, 5,   6, 7, 8 ] 
+            //9 is removed from the array
              

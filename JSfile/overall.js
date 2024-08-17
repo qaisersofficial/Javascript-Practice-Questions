@@ -708,70 +708,70 @@
             {
                 name: "Ahmed",
                 height: "180 ",
-                mass: "75 kg",
+                mass: "75 ",
                 eye_color: "Brown",
                 gender: "Male"
             },
             {
                 name: "Fatimah",
                 height: "165 ",
-                mass: "60 kg",
+                mass: "60 ",
                 eye_color: "Black",
                 gender: "Female"
             },
             {
                 name: "Hassan",
                 height: "175 ",
-                mass: "70 kg",
+                mass: "70 ",
                 eye_color: "Green",
                 gender: "Male"
             },
             {
                 name: "Aisha",
                 height: "160 ",
-                mass: "55 kg",
+                mass: "55 ",
                 eye_color: "Hazel",
                 gender: "Female"
             },
             {
                 name: "Omar",
                 height: "182 ",
-                mass: "78 kg",
+                mass: "78 ",
                 eye_color: "Blue",
                 gender: "Male"
             },
             {
                 name: "Khadijah",
                 height: "170 ",
-                mass: "65 kg",
+                mass: "65 ",
                 eye_color: "Brown",
                 gender: "Female"
             },
             {
                 name: "Ali",
                 height: "178 ",
-                mass: "72 kg",
+                mass: "72 ",
                 eye_color: "Black",
                 gender: "Male"
             },
             {
                 name: "Maryam",
                 height: "162 ",
-                mass: "58 kg",
+                mass: "158 ",
                 eye_color: "Green",
                 gender: "Female"
             },
             {
                 name: "Yusuf",
                 height: "185 ",
-                mass: "80 kg",
+                mass: "80 ",
                 eye_color: "Brown",
                 gender: "Male"
             },
             {
                 name: "Zainab",
                 height: "168 ",
-                mass: "62 kg",
+                mass: "162 ",
                 eye_color: "Hazel",
                 gender: "Female"
             }
@@ -792,4 +792,11 @@
             },0)
             console.log('Total height of all characters is: '+  totalheight + " in centimeters")
        
+        // get characteritics with mass greater than 100
+
+        const greatermass = characteristics.filter( (char)=>{
+                return char.mass > 100;
+        });
+        console.log(greatermass);
+        
         

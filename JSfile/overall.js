@@ -635,16 +635,65 @@
 
 
     //Join 
-        let name = [ "Q", "a", "i", "s", "e", "r"];
+        // let name = [ "Q", "a", "i", "s", "e", "r"];
     //   let combine =  name.join(); // without seperator
     //   console.log(combine); //Q,a,i,s,e,r
 
-      let combinetry2 = name.join(''); // use seperator to avoid , in output 
+    //   let combinetry2 = name.join(''); // use seperator to avoid , in output 
     //   console.log(combinetry2); 
     //   Q,a,i,s,e,r    using join()
     //   Qaiser         using join('')
 
     // split
-    let splitname = name.split("");
+    // let splitname = name.split("");
 
-    console.log( splitname);
+    // console.log( splitname);
+
+
+        //filter method
+
+        let countries = [
+            {
+                name: "China",
+                population: 1444216107
+            },
+            {
+                name: "India",
+                population: 1407563842
+            },
+            {
+                name: "United States",
+                population: 335506737
+            },
+            {
+                name: "Indonesia",
+                population: 276361783
+            },
+            {
+                name: "Pakistan",
+                population: 243447728
+            },
+            {
+                name: "Brazil",
+                population: 216446902
+            },
+            {
+                name: "Nigeria",
+                population: 225082083
+            },
+            {
+                name: "Bangladesh",
+                population: 172954319
+            },
+            {
+                name: "Russia",
+                population: 142338437
+            },
+            {
+                name: "Mexico",
+                population: 129929472
+            }
+        ];
+        
+        console.log( countries.filter(country =>  country.population > 240000000))
+        

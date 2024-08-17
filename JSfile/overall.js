@@ -597,7 +597,7 @@
     //   ]
       
 // For loop
-    const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
+    // const names = [ 'Adil Hussain', 'Yasir Ali', 'Nasir Ali', 'Murtaza Ali', 'Qaiser Ali' ];
         // for (let i = 0; i < names.length ; i++){
         //     console.log(names[i]);
         // }
@@ -623,12 +623,18 @@
 
         //forEach method
 
-        names.forEach((name, index)=>{
-            console.log(name, index);
-        })
+        // names.forEach((name, index)=>{
+        //     console.log(name, index);
+        // })
          //output: same output as for loop and for of loop
         // Adil Hussain
         // Yasir Ali
         // Nasir Ali
         // Murtaza  Ali
         // Qaiser Ali
+
+
+    //Join 
+        let name = [ "Q", "a", "i", "s", "e", "r"];
+      let combine =  name.join();
+      console.log(combine); //Q,a,i,s,e,r

@@ -446,3 +446,9 @@
 
         // console.log(employee_1);
         // console.log(employee_2);
+
+
+        //creating method in a class to extend it
+
+
+        

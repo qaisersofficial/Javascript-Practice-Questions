@@ -855,15 +855,22 @@
 
     // destructuring objects
 
-    const course = {
-        name: 'JavaScript',
-        duration: 30,
-        price: 1000
-    }
+    // const course = {
+    //     name: 'JavaScript',
+    //     duration: 30,
+    //     price: 1000
+    // }
     // console.log(course.name);
     // const {name} = course;
     // console.log(name);
 
     //rename the key of an object and then show in console with new name
-        const {name : coursename} = course;
-        console.log(coursename);    
+        // const {name : coursename} = course;
+        // console.log(coursename);    
+
+        // Array destructuring
+
+        let array = ['Qaiser', 'Ali'];
+        let [firstname, surname] = array;
+        console.log( firstname);
+        console.log(array[0]);

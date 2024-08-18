@@ -898,5 +898,9 @@
             };
 
             // console.log(option.title + " " + option.width + " " + option.height);    //menu 500 200
-            let {title, width, height} = option;
-            console.log (title + " "+ width + " " + height);    //menu 500 200
+            // let {title, width, height} = option;
+            // console.log (title + " "+ width + " " + height);    //menu 500 200
+
+            // change the order in let {...}
+            let { width, height, title} = {title :"Javascript practice", height : 200, width: 300};
+             console.log (title + " "+ width + " " + height);    //Javascript practice 300 200

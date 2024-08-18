@@ -893,8 +893,6 @@
 
             let option = {
                 title : "menu",
-                width : 500,
-                height : 200
             };
 
             // console.log(option.title + " " + option.width + " " + option.height);    //menu 500 200
@@ -908,5 +906,14 @@
 
     // we can set any name as vaariable name of key of obbjects
 
-        let {title : t, height : h, width : w} = option;
-                    console.log( t + " " + w + " " + h); //menu 500 200
+        // let {title : t, height : h, width : w} = option;
+        //             console.log( t + " " + w + " " + h); //menu 500 200
+
+
+        // protentially missing properties we can set default values using "=",like this
+
+            let {width :w = 100 , height : h = 200} = option;
+            //or
+            // let {width  = 100 , height  = 200} = option;
+            console.log(w); // 100
+            // console.log(width); // 100

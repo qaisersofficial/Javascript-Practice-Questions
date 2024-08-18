@@ -852,3 +852,71 @@
         //is there atleast on characterstic than 200?
                 // console.log(characteristics.some((char)=> char.height > 200)) // false
 //=====================================================================================================================================
+
+    // destructuring objects
+
+    // const course = {
+    //     name: 'JavaScript',
+    //     duration: 30,
+    //     price: 1000
+    // }
+    // console.log(course.name);
+    // const {name} = course;
+    // console.log(name);
+
+    //rename the key of an object and then show in console with new name
+        // const {name : coursename} = course;
+        // console.log(coursename);    
+
+        // Array destructuring
+
+                // let array = ['Qaiser', 'Ali'];
+                // let [firstname, surname] = array;
+                // console.log( firstname);
+                // console.log(array[0]);
+
+
+            // work with variables instead of array members.
+
+            // let [firstname, surname] = "Qaiser=Ali".split('=');
+            // console.log(surname);
+
+
+            // let [firstName, surname] = arr;
+            // let firstname = array[0];
+            // let surname = array[1];
+            // console.log(firstname);
+
+
+        //object destructuring
+                //the destructuring assignment works with both arrays and objects
+
+            let option = {
+                title : "menu",
+            };
+
+            // console.log(option.title + " " + option.width + " " + option.height);    //menu 500 200
+            // let {title, width, height} = option;
+            // console.log (title + " "+ width + " " + height);    //menu 500 200
+
+            // change the order in let {...}
+            // let { width, height, title} = {title :"Javascript practice", height : 200, width: 300};
+            //  console.log (title + " "+ width + " " + height);    //Javascript practice 300 200
+
+
+    // we can set any name as vaariable name of key of obbjects
+
+        // let {title : t, height : h, width : w} = option;
+        //             console.log( t + " " + w + " " + h); //menu 500 200
+
+
+        // protentially missing properties we can set default values using "=",like this
+
+            // let {width :w = 100 , height : h = 200} = option;
+            //or
+            // let {width  = 100 , height  = 200} = option;
+            // console.log(w); // 100
+            // console.log(width); // 100
+
+
+        //nested destructuring... 

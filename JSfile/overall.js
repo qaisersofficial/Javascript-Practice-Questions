@@ -902,5 +902,11 @@
             // console.log (title + " "+ width + " " + height);    //menu 500 200
 
             // change the order in let {...}
-            let { width, height, title} = {title :"Javascript practice", height : 200, width: 300};
-             console.log (title + " "+ width + " " + height);    //Javascript practice 300 200
+            // let { width, height, title} = {title :"Javascript practice", height : 200, width: 300};
+            //  console.log (title + " "+ width + " " + height);    //Javascript practice 300 200
+
+
+    // we can set any name as vaariable name of key of obbjects
+
+        let {title : t, height : h, width : w} = option;
+                    console.log( t + " " + w + " " + h); //menu 500 200

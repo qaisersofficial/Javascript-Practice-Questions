@@ -912,8 +912,11 @@
 
         // protentially missing properties we can set default values using "=",like this
 
-            let {width :w = 100 , height : h = 200} = option;
+            // let {width :w = 100 , height : h = 200} = option;
             //or
             // let {width  = 100 , height  = 200} = option;
-            console.log(w); // 100
+            // console.log(w); // 100
             // console.log(width); // 100
+
+
+        //nested destructuring... 

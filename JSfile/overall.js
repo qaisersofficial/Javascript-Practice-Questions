@@ -870,7 +870,7 @@
 
         // Array destructuring
 
-                let array = ['Qaiser', 'Ali'];
+                // let array = ['Qaiser', 'Ali'];
                 // let [firstname, surname] = array;
                 // console.log( firstname);
                 // console.log(array[0]);
@@ -883,6 +883,18 @@
 
 
             // let [firstName, surname] = arr;
-            let firstname = array[0];
-            let surname = array[1];
-            console.log(firstname);
+            // let firstname = array[0];
+            // let surname = array[1];
+            // console.log(firstname);
+
+
+        //object destructuring
+                //the destructuring assignment works with both arrays and objects
+
+            let option = {
+                title : "menu",
+                width : 500,
+                height : 200
+            };
+
+            console.log(option.title + " " + option.width + " " + option.height);

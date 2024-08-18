@@ -897,4 +897,6 @@
                 height : 200
             };
 
-            console.log(option.title + " " + option.width + " " + option.height);
+            // console.log(option.title + " " + option.width + " " + option.height);    //menu 500 200
+            let {title, width, height} = option;
+            console.log (title + " "+ width + " " + height);    //menu 500 200

@@ -852,3 +852,14 @@
         //is there atleast on characterstic than 200?
                 // console.log(characteristics.some((char)=> char.height > 200)) // false
 //=====================================================================================================================================
+
+    // destructuring objects
+
+    const course = {
+        name: 'JavaScript',
+        duration: 30,
+        price: 1000
+    }
+    // console.log(course.name);
+    const {name} = course;
+    console.log(name);

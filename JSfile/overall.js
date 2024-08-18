@@ -870,7 +870,13 @@
 
         // Array destructuring
 
-        let array = ['Qaiser', 'Ali'];
-        let [firstname, surname] = array;
-        console.log( firstname);
-        console.log(array[0]);
+                // let array = ['Qaiser', 'Ali'];
+                // let [firstname, surname] = array;
+                // console.log( firstname);
+                // console.log(array[0]);
+
+
+            // work with variables instead of array members.
+
+            let [firstname, surname] = "Qaiser=Ali".split('=');
+            console.log(surname)

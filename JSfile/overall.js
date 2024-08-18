@@ -861,5 +861,9 @@
         price: 1000
     }
     // console.log(course.name);
-    const {name} = course;
-    console.log(name);
+    // const {name} = course;
+    // console.log(name);
+
+    //rename the key of an object and then show in console with new name
+        const {name : coursename} = course;
+        console.log(coursename);    

@@ -919,4 +919,6 @@
             // console.log(width); // 100
 
 
-        //nested destructuring... 
+//============================================================================================================
+// i attached a js-summary file to finish up the basics in detail and nearly i will make some more practice questions 
+//============================================================================================================

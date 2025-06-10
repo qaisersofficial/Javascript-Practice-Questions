@@ -943,15 +943,27 @@
 
 // calculate the total cost of a toaster ($18.50) and 2 shirts (7.50 each).
 
-// const toaster = 18.50;
-// const shirts = Math.round(7.50 * 2);
-// const total = toaster + shirts;
+const toaster = 18.50;
+const shirts = Math.round(7.50 * 2);
+const total = toaster + shirts;
 // console.log(`Teh total cost of toaster and shirts are: $${total}`)
 
 
 // generate a random integer between two bounds 
-const random = (min, max) =>{
-    const number = Math.floor(Math.random() * (max - min + 1) + min);
-    console.log(number);
+// const random = (min, max) =>{
+//     const number = Math.floor(Math.random() * (max - min + 1) + min);
+//     console.log(number);
+// }
+// random(1,10)
+
+// calculate the 10 % tax for the total of toaster question
+
+function calculateTax(totalAmount){
+    const taxRate = 0.10;
+    const taxAmount = totalAmount * taxRate;
+    return taxAmount; 
 }
-random(1,10)
+const tax = calculateTax(total)
+console.log(`Total bill: $${total}`)
+console.log(`10% tax: $${tax}`)
+console.log(`Total including tax: $${tax + total}`)

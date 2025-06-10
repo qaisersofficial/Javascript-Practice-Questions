@@ -972,13 +972,21 @@
 // Celsius (F) = (Fahrenheit - 32 ) * 5/9
 
 // The Temprature is 25C. calculate the temperatur in Fahrenheit. 
+function ConvertintoFahrenheit(tempInCelsius){
+    return (tempInCelsius * 9/5) + 32;
+}
+const celTemprature = 25;
+const fahTemprature = ConvertintoFahrenheit(celTemprature)
+console.log(fahTemprature)
 
-
-
+// The output is 77
 
 // The Temprature is 86F. calculate the temperatur in Celsius. 
+function ConvertintoCelsius(tempInFahrenheit){
+    return (tempInFahrenheit - 32 ) * 5/9;
+}
 
-
-
-
-// The Temprature is 25C. calculate the temperatur in Fahrenheit. 
+const fahrenheitTemprature = 86;
+const celsiusTemprature = ConvertintoCelsius(fahrenheitTemprature)
+console.log(celsiusTemprature)
+// The output is 30

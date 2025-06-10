@@ -891,9 +891,9 @@
         //object destructuring
                 //the destructuring assignment works with both arrays and objects
 
-            let option = {
-                title : "menu",
-            };
+            // let option = {
+            //     title : "menu",
+            // };
 
             // console.log(option.title + " " + option.width + " " + option.height);    //menu 500 200
             // let {title, width, height} = option;
@@ -922,3 +922,78 @@
 //============================================================================================================
 // i attached a js-summary file to finish up the basics in detail and nearly i will make some more practice questions 
 //============================================================================================================
+
+// Question: At a resturant, you order 1 soup for $10, 3 burgers for $8 each, and 1 ice cream for $5. use javascript to calculate the cost of the order.
+
+// const soup = 10;
+// const burger = 8;
+// const ice_cream = 5;
+// var total = soup + (burger * 3) + ice_cream;
+
+// console.log(`The total of 1 soup, 3 burgers and an ice cream is: ${total}`)
+
+
+// You're at a resturant with 2 friends (3 people in total) and make the same order as above question, calculate how much each person pays.
+
+// as we are 3 friends and its time to make american system payment
+
+// var american_system = total/3;
+// console.log(`Each friend pay: ${american_system}`)
+
+
+// calculate the total cost of a toaster ($18.50) and 2 shirts (7.50 each).
+
+// const toaster = 18.50;
+// const shirts = Math.round(7.50 * 2);
+// const total = toaster + shirts;
+// console.log(`Teh total cost of toaster and shirts are: $${total}`)
+
+
+// generate a random integer between two bounds 
+// const random = (min, max) =>{
+//     const number = Math.floor(Math.random() * (max - min + 1) + min);
+//     console.log(number);
+// }
+// random(1,10)
+
+// calculate the 10 % tax for the total of toaster question
+
+// function calculateTax(totalAmount){
+//     const taxRate = 0.20;
+//     const taxAmount = totalAmount * taxRate;
+//     return taxAmount; 
+// }
+// const tax = calculateTax(total)
+// console.log(`Total bill: $${total}`)
+// console.log(`20% tax: $${tax}`)
+// console.log(`Total including tax: $${tax + total}`)
+
+// Fahrenheit (F) = (Celsius * 9/5) + 32
+// Celsius (F) = (Fahrenheit - 32 ) * 5/9
+
+// The Temprature is 25C. calculate the temperatur in Fahrenheit. 
+// function ConvertintoFahrenheit(tempInCelsius){
+//     return (tempInCelsius * 9/5) + 32;
+// }
+// const celTemprature = -5;
+// const fahTemprature = ConvertintoFahrenheit(celTemprature)
+// console.log(fahTemprature)
+
+// The output is 77
+
+// The Temprature is 86F. calculate the temperatur in Celsius. 
+// function ConvertintoCelsius(tempInFahrenheit){
+//     return (tempInFahrenheit - 32 ) * 5/9;
+// }
+
+// const fahrenheitTemprature = 86;
+// const celsiusTemprature = ConvertintoCelsius(fahrenheitTemprature)
+// console.log(celsiusTemprature)
+// The output is 30
+
+// write some code to check if someone is old enough to drive
+
+const Eligible = (name, age) =>{
+    (age > 18) ? console.log(`Yes! ${name} is Eligible to drive`) : console.log(`${name}'s age is not enough to drive`);
+}
+Eligible( "Qaiser" , 24);

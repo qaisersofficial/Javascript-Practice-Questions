@@ -891,9 +891,9 @@
         //object destructuring
                 //the destructuring assignment works with both arrays and objects
 
-            let option = {
-                title : "menu",
-            };
+            // let option = {
+            //     title : "menu",
+            // };
 
             // console.log(option.title + " " + option.width + " " + option.height);    //menu 500 200
             // let {title, width, height} = option;
@@ -922,3 +922,12 @@
 //============================================================================================================
 // i attached a js-summary file to finish up the basics in detail and nearly i will make some more practice questions 
 //============================================================================================================
+
+// Question: At a resturant, you order 1 soup for $10, 3 burgers for $8 each, and 1 ice cream for $5. use javascript to calculate the cost of the order.
+
+const soup = 10;
+const burger = 8;
+const ice_cream = 5;
+var total = soup + (burger * 3) + ice_cream;
+
+console.log(`The total of 1 soup, 3 burgers and an ice cream is: ${total}`)

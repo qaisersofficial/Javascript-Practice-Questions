@@ -959,11 +959,11 @@ const total = toaster + shirts;
 // calculate the 10 % tax for the total of toaster question
 
 function calculateTax(totalAmount){
-    const taxRate = 0.10;
+    const taxRate = 0.20;
     const taxAmount = totalAmount * taxRate;
     return taxAmount; 
 }
 const tax = calculateTax(total)
 console.log(`Total bill: $${total}`)
-console.log(`10% tax: $${tax}`)
+console.log(`20% tax: $${tax}`)
 console.log(`Total including tax: $${tax + total}`)

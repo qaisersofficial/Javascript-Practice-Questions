@@ -930,4 +930,12 @@ const burger = 8;
 const ice_cream = 5;
 var total = soup + (burger * 3) + ice_cream;
 
-console.log(`The total of 1 soup, 3 burgers and an ice cream is: ${total}`)
+// console.log(`The total of 1 soup, 3 burgers and an ice cream is: ${total}`)
+
+
+// You're at a resturant with 2 friends (3 people in total) and make the same order as above question, calculate how much each person pays.
+
+// as we are 3 friends and its time to make american system payment
+
+var american_system = total/3;
+console.log(`Each friend pay: ${american_system}`)

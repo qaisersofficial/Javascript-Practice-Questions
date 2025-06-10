@@ -943,9 +943,9 @@
 
 // calculate the total cost of a toaster ($18.50) and 2 shirts (7.50 each).
 
-const toaster = 18.50;
-const shirts = Math.round(7.50 * 2);
-const total = toaster + shirts;
+// const toaster = 18.50;
+// const shirts = Math.round(7.50 * 2);
+// const total = toaster + shirts;
 // console.log(`Teh total cost of toaster and shirts are: $${total}`)
 
 
@@ -958,12 +958,27 @@ const total = toaster + shirts;
 
 // calculate the 10 % tax for the total of toaster question
 
-function calculateTax(totalAmount){
-    const taxRate = 0.20;
-    const taxAmount = totalAmount * taxRate;
-    return taxAmount; 
-}
-const tax = calculateTax(total)
-console.log(`Total bill: $${total}`)
-console.log(`20% tax: $${tax}`)
-console.log(`Total including tax: $${tax + total}`)
+// function calculateTax(totalAmount){
+//     const taxRate = 0.20;
+//     const taxAmount = totalAmount * taxRate;
+//     return taxAmount; 
+// }
+// const tax = calculateTax(total)
+// console.log(`Total bill: $${total}`)
+// console.log(`20% tax: $${tax}`)
+// console.log(`Total including tax: $${tax + total}`)
+
+// Fahrenheit (F) = (Celsius * 9/5) + 32
+// Celsius (F) = (Fahrenheit - 32 ) * 5/9
+
+// The Temprature is 25C. calculate the temperatur in Fahrenheit. 
+
+
+
+
+// The Temprature is 86F. calculate the temperatur in Celsius. 
+
+
+
+
+// The Temprature is 25C. calculate the temperatur in Fahrenheit. 

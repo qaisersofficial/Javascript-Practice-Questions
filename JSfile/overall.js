@@ -925,10 +925,10 @@
 
 // Question: At a resturant, you order 1 soup for $10, 3 burgers for $8 each, and 1 ice cream for $5. use javascript to calculate the cost of the order.
 
-const soup = 10;
-const burger = 8;
-const ice_cream = 5;
-var total = soup + (burger * 3) + ice_cream;
+// const soup = 10;
+// const burger = 8;
+// const ice_cream = 5;
+// var total = soup + (burger * 3) + ice_cream;
 
 // console.log(`The total of 1 soup, 3 burgers and an ice cream is: ${total}`)
 
@@ -937,5 +937,13 @@ var total = soup + (burger * 3) + ice_cream;
 
 // as we are 3 friends and its time to make american system payment
 
-var american_system = total/3;
-console.log(`Each friend pay: ${american_system}`)
+// var american_system = total/3;
+// console.log(`Each friend pay: ${american_system}`)
+
+
+// calculate the total cost of a toaster ($18.50) and 2 shirts (7.50 each).
+
+const toaster = 18.50;
+const shirts = Math.round(7.50 * 2);
+const total = toaster + shirts;
+console.log(`Teh total cost of toaster and shirts are: $${total}`)

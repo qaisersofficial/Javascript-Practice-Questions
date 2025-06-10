@@ -991,3 +991,13 @@
 // console.log(celsiusTemprature)
 // The output is 30
 
+// write some code to check if someone is old enough to drive
+
+function Eligible(name, age){
+if (age > 18){
+    console.log(`Yes! ${name} is Eligible to drive`)
+}else{
+    console.log(`${name}'s age is not enough to drive`)
+}
+}
+Eligible( "Umer" , 16);

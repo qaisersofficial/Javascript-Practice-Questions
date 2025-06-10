@@ -975,7 +975,7 @@
 function ConvertintoFahrenheit(tempInCelsius){
     return (tempInCelsius * 9/5) + 32;
 }
-const celTemprature = 25;
+const celTemprature = -5;
 const fahTemprature = ConvertintoFahrenheit(celTemprature)
 console.log(fahTemprature)
 

@@ -11,16 +11,24 @@
         <li>Second item</li>
         <li>Third item</li>
     </ul>
+    <h2>Hello, My name is Qaiser Ali.</h2>
 
     <script>
         const ul = document.querySelector("ul");
-        if(ul.childNodes){
-            let children = ul.childNodes;
-            for (let index = 0; index < children.length; index++) {
-                const element = children[index];
-                console.dir(children[index])
-            }
-        }
+        // if(ul.childNodes){
+        //     let children = ul.childNodes;
+        //     for (let index = 0; index < children.length; index++) {
+        //         const element = children[index];
+        //         console.dir(children[index])
+        //     }
+        // }
+
+
+        console.log(ul.innerHTML);
+        console.log(ul.textContent);
+
+        const heading2 = document.querySelector('h2');
+        heading2.innerText = `${heading2.innerText}, from lalamusa`;
     </script>
 </body>
 </html>

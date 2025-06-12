@@ -12,9 +12,13 @@
         <li>Third item</li>
     </ul>
     <h2>Hello, My name is Qaiser Ali.</h2> -->
-    <div class="box">First box</div>
+    <!-- <div class="box">First box</div>
     <div class="box">Second box</div>
-    <div class="box">Third box</div>
+    <div class="box">Third box</div> -->
+    <button>
+        print something
+    </button>
+    <ul id="ul"></ul>
     <script>
         // const ul = document.querySelector("ul");
         // if(ul.childNodes){
@@ -32,13 +36,29 @@
         // const heading2 = document.querySelector('h2');
         // heading2.innerText = `${heading2.innerText}, from lalamusa`;
 
-        const divs = document.querySelectorAll(".box");
-        var index = 1;
+        // const divs = document.querySelectorAll(".box");
+        // var index = 1;
 
-        for(div of divs){
-            div.innerText = `unique value ${index}`
-            index++;
+        // for(div of divs){
+        //     div.innerText = `unique value ${index}`
+        //     index++;
+        // }
+        document.title = "DOM"
+        const messages = ["Hello there!", "How are you today?", "Hope you're doing great!"];
+        let currentIndex = 0;
+        
+        const btn = document.querySelector("button");
+        var list = document.getElementById("ul")
+        
+       btn.addEventListener("click", ()=>{
+        if (currentIndex < messages.length) {
+        const listItem = document.createElement("li");
+        listItem.textContent = messages[currentIndex++];
+        list.appendChild(listItem);
+        }else{
+            btn.disabled = true;
         }
+       })
     </script>
 </body>
 </html>

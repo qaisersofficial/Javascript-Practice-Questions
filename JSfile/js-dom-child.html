@@ -6,15 +6,17 @@
     <title>Dom Child and Childrens</title>
 </head>
 <body>
-    <ul>
+    <!-- <ul>
         <li>First item</li>
         <li>Second item</li>
         <li>Third item</li>
     </ul>
-    <h2>Hello, My name is Qaiser Ali.</h2>
-
+    <h2>Hello, My name is Qaiser Ali.</h2> -->
+    <div class="box">First box</div>
+    <div class="box">Second box</div>
+    <div class="box">Third box</div>
     <script>
-        const ul = document.querySelector("ul");
+        // const ul = document.querySelector("ul");
         // if(ul.childNodes){
         //     let children = ul.childNodes;
         //     for (let index = 0; index < children.length; index++) {
@@ -24,11 +26,19 @@
         // }
 
 
-        console.log(ul.innerHTML);
-        console.log(ul.textContent);
+        // console.log(ul.innerHTML);
+        // console.log(ul.textContent);
 
-        const heading2 = document.querySelector('h2');
-        heading2.innerText = `${heading2.innerText}, from lalamusa`;
+        // const heading2 = document.querySelector('h2');
+        // heading2.innerText = `${heading2.innerText}, from lalamusa`;
+
+        const divs = document.querySelectorAll(".box");
+        var index = 1;
+
+        for(div of divs){
+            div.innerText = `unique value ${index}`
+            index++;
+        }
     </script>
 </body>
 </html>

@@ -15,10 +15,11 @@
     <!-- <div class="box">First box</div>
     <div class="box">Second box</div>
     <div class="box">Third box</div> -->
+    <p></p>
     <button>
-        print something
+        follow me
     </button>
-    <ul id="ul"></ul>
+    <!-- <ul id="ul"></ul> -->
     <script>
         // const ul = document.querySelector("ul");
         // if(ul.childNodes){
@@ -43,22 +44,29 @@
         //     div.innerText = `unique value ${index}`
         //     index++;
         // }
-        document.title = "DOM"
-        const messages = ["Hello there!", "How are you today?", "Hope you're doing great!"];
-        let currentIndex = 0;
+    //     document.title = "DOM"
+    //     const messages = ["Hello there!", "How are you today?", "Hope you're doing great!"];
+    //     let currentIndex = 0;
         
-        const btn = document.querySelector("button");
-        var list = document.getElementById("ul")
+    //     const btn = document.querySelector("button");
+    //     var list = document.getElementById("ul")
         
-       btn.addEventListener("click", ()=>{
-        if (currentIndex < messages.length) {
-        const listItem = document.createElement("li");
-        listItem.textContent = messages[currentIndex++];
-        list.appendChild(listItem);
-        }else{
-            btn.disabled = true;
-        }
-       })
+    //    btn.addEventListener("click", ()=>{
+    //     if (currentIndex < messages.length) {
+    //     const listItem = document.createElement("li");
+    //     listItem.textContent = messages[currentIndex++];
+    //     list.appendChild(listItem);
+    //     }else{
+    //         btn.disabled = true;
+    //     }
+    //    })
+
+    const para = document.querySelector("p");
+    const button = document.querySelector("button");
+
+    button.onclick = function (){
+        para.innerHTML = `<a target="_blank" href="https://github.com/qaisersofficial">GitHub</a>`
+    }
     </script>
 </body>
 </html>

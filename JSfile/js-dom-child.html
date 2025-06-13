@@ -68,11 +68,18 @@
     //     para.innerHTML = `<a target="_blank" href="https://github.com/qaisersofficial">GitHub</a>`
     // }
 
-    const countdown = [];
-        for (let index = 0; index < 5; index++) {
-            countdown.push(index);
-        }
-        para.innerHTML = countdown.reverse();
+    // const countdown = [];
+    //     for (let index = 0; index < 5; index++) {
+    //         countdown.push(index);
+    //     }
+    //     para.innerHTML = countdown.reverse();
+
+    const arr = [1,2,3];
+        const arrcopy = []
+    for(let i=0; i < arr.length; i++){
+       arrcopy[i] = arr[i] + 1;
+    }
+    para.innerText = arrcopy;
         
     </script>
 </body>

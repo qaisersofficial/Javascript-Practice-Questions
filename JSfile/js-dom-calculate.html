@@ -30,9 +30,9 @@
 
             if (inputCost < 40) {
                 inputCost = inputCost + 10;
-                totalCost.innerHTML = `Your Total Bill with shipping: $${inputCost}`;
+                totalCost.textContent = `Your Total Bill with shipping: $${inputCost}`;
             }else{
-                totalCost.innerHTML = `Your Total Bill without shipping: $${inputCost}`;
+                totalCost.textContent = `Your Total Bill without shipping: $${inputCost}`;
             }
             
         }

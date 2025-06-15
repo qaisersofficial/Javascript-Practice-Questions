@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  textarea {
+    width: 90%; /* Fluid width */
+    max-width: 500px; /* Max width for larger screens */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    resize: vertical; /* Allow vertical resizing */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+  }
+  p#charCount {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #007bff;
+    background-color: #e9f7fe;
+    padding: 10px 15px;
+    border-radius: 20px; /* Rounded pill shape */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    textarea {
+      width: 95%; /* Wider on smaller screens */
+    }
+  }

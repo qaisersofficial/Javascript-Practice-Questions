@@ -75,10 +75,7 @@
     //     para.innerHTML = countdown.reverse();
 
     const arr = [1,2,3];
-        const arrcopy = []
-    for(let i=0; i < arr.length; i++){
-       arrcopy[i] = arr[i] + 1;
-    }
+    const arrcopy = arr.map(n => n + 1);
     para.innerText = arrcopy;
         
     </script>

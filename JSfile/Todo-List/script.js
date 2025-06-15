@@ -35,20 +35,19 @@ function handleEnterKey(event){
 
 function renderTodoList(){
 let todoListHTML = '';
+const heading = document.getElementById("taskHeading");
 
-    for (let i = 0; i < todoArr.length; i++) {
+if (todoArr.length === 1) {
+    heading.textContent = "Task Todo:";
+} else if (todoArr.length > 1) {
+    heading.textContent = "Tasks Todo:";
+} else {
+    heading.textContent = "No Tasks";
+}
+
+for (let i = 0; i < todoArr.length; i++) {
     const elementObject = todoArr[i];
     const { name, dueDate } = elementObject; //destructuring
-    // console.log(element)
-     const heading = document.getElementById("taskHeading");
-
-  if (todoArr.length === 1) {
-    heading.textContent = "Task Todo:";
-  } else if (todoArr.length > 1) {
-    heading.textContent = "Tasks Todo:";
-  } else  if (todoArr.length <= 0) {
-    heading.textContent = "No Tasks";
-  }
     const paragraph = `
     <li>
         <span class="font-semibold text-gray-900 dark:text-white">${name}</span> on <span class="font-semibold text-gray-900 dark:text-white">${dueDate} </span>

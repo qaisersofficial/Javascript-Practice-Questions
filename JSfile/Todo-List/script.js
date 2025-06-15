@@ -48,19 +48,21 @@ if (todoArr.length === 1) {
 for (let i = 0; i < todoArr.length; i++) {
     const elementObject = todoArr[i];
     const { name, dueDate } = elementObject; //destructuring
-    const paragraph = `
-    <li>
-        <span class="font-semibold text-gray-900 dark:text-white">${name}</span> on <span class="font-semibold text-gray-900 dark:text-white">${dueDate} </span>
-    <button
-      class="ml-2 px-3 py-1 bg-red-500 text-white text-sm rounded hover:bg-red-600 transition duration-200 cursor-pointer"
-    onclick= "
-    todoArr.splice(${i},1);
-    renderTodoList();
-    "
-    >Delete</button>
-    </li>
-   `
-    todoListHTML += paragraph;
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+        <span class="font-semibold text-gray-900 dark:text-white">${name}</span> on <span class="font-semibold text-gray-900 dark:text-white">${dueDate}</span>
+    `;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'ml-2 px-3 py-1 bg-red-500 text-white text-sm rounded hover:bg-red-600 transition duration-200 cursor-pointer';
+    deleteButton.addEventListener('click', () => {
+        todoArr.splice(i, 1);
+        renderTodoList();
+    });
+
+    listItem.appendChild(deleteButton);
+    todoListHTML += listItem.outerHTML;
     
 }
 document.querySelector(".todo-list").innerHTML = todoListHTML;

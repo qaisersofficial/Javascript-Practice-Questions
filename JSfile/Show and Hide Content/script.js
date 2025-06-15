@@ -1,7 +1,7 @@
 function myFunction() {
   var element = document.getElementById("para");
 
-  if (element.style.display === "none") {
+  if (getComputedStyle(element).display === "none") {
     element.style.display = "block"; // Show the element
   } else {
     element.style.display = "none"; // Hide the element

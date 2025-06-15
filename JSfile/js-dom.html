@@ -27,10 +27,10 @@
         const button = document.querySelector("#incbtn");
         const showValue = document.querySelector("#displayVal");
         let counter = 0;
-        button.onclick = function (){
+        button.addEventListener('click', function () {
             counter++;
             showValue.textContent = counter;
-        }
+        });
     </script>
 
 </body>

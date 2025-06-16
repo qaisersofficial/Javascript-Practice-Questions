@@ -47,6 +47,21 @@
     }
   }
 
+  function checkFormValidity() {
+  const isNameValid = validateName();
+  const isEmailValid = validateEmail();
+  const isPasswordValid = validatePassword();
+
+  submitBtn.disabled = !(isNameValid && isEmailValid && isPasswordValid);
+}
+
+    nameInput.addEventListener('input', checkFormValidity);
+    emailInput.addEventListener('input', checkFormValidity);
+    passwordInput.addEventListener('input', checkFormValidity);
+
+    // Initial check on page load
+    checkFormValidity();
+
   signupForm.addEventListener('submit', function(event) {
     event.preventDefault();
 

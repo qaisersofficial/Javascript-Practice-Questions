@@ -17,7 +17,7 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     width: 90%;
     max-width: 400px;
   }
@@ -44,9 +44,11 @@ body {
   button[type="submit"]:hover {
     background-color: #9eaf70;
   }
-  p#error {
+small{
     color: #dc3545;
+    height: 1.2em;
+    /* margin-bottom: 10px; */
     font-size: 0.9em;
-    font-weight: bold;
-    margin-top: 10px;
+    /* font-weight: bold; */
+    /* margin-top: 10px; */
   }

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocationShare - Live Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-red-600 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">LocationShare</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span id="userGreeting" class="text-gray-700"></span>
+                    <a href="dashboard.html" class="text-yellow-600 hover:text-yellow-800 font-medium">
+                        <i class="fas fa-cog mr-1"></i>Dashboard
+                    </a>
+                    <button id="logoutBtn" class="text-red-600 hover:text-red-800 font-medium">
+                        <i class="fas fa-sign-out-alt mr-1"></i>Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-80 bg-transparent shadow-lg overflow-y-auto">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 text-center mb-4">Location Sharing</h2>
+                
+                <!-- Status Card -->
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-sm font-medium text-yellow-800">Sharing Status</span>
+                        <div id="statusIndicator" class="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <p id="statusText" class="text-sm text-yellow-700">Location sharing is active</p>
+                </div>
+
+                <!-- Your Location -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Your Location</h3>
+                    <div class="bg-gray-50 rounded-lg p-3">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-map-marker-alt text-red-600 mr-2"></i>
+                            <span class="text-sm font-medium text-gray-700">Current Position</span>
+                        </div>
+                        <p id="currentLocation" class="text-xs text-gray-600 flex items-center">
+                            Getting location
+                            <span class="dot-1 mx-0.5 animate-blink">.</span>
+                            <span class="dot-2 mx-0.5 animate-blink delay-200">.</span>
+                            <span class="dot-3 mx-0.5 animate-blink delay-400">.</span>
+                        </p>
+                        <p id="lastUpdated" class="text-xs text-gray-500 mt-1">Last updated: --</p>
+                    </div>
+                </div>
+
+                <!-- Share Code -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Share Your Location</h3>
+                    <div class="bg-gray-50 rounded-lg p-3">
+                        <label for="shareCode" class="block text-sm font-medium text-gray-700 mb-2">Your Share Code</label>
+                        <div class="flex">
+                            <input name="shareCode" type="text" id="shareCode" class="flex-1 px-3 py-2 border border-gray-300 rounded-l-lg bg-white text-sm" readonly>
+                            <button id="copyCodeBtn" class="px-3 py-2 bg-yellow-600 text-white rounded-r-lg hover:bg-yellow-700">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View Others -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">View Others</h3>
+                    <div class="space-y-2">
+                        <input type="text" id="friendCode" placeholder="Enter friend's share code" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm">
+                        <button id="addFriendBtn" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg text-sm font-medium">
+                            <i class="fas fa-plus mr-1"></i>Add Friend
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Friends List -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Friends</h3>
+                    <div id="friendsList" class="space-y-2">
+                        <!-- Friends will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Container -->
+        <div class="flex-1 relative">
+            <div id="map" class="w-full h-full"></div>
+            
+            <!-- Map Controls -->
+            <div class="absolute top-4 right-4 space-y-2">
+                <button id="centerMapBtn" class="bg-white shadow-lg rounded-lg p-3 hover:bg-gray-50">
+                    <i class="fas fa-crosshairs text-gray-700"></i>
+                </button>
+                <button id="toggleSharingBtn" class="bg-white shadow-lg rounded-lg p-3 hover:bg-gray-50">
+                    <i class="fas fa-eye text-green-600"></i>
+                </button>
+            </div>
+
+            <!-- Location Permission Banner -->
+            <div id="locationBanner" class="absolute top-0 left-0 right-0 bg-yellow-500 text-white p-3 text-center hidden">
+                <p class="text-sm">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    Location access is required for this app to work. Please enable location permissions.
+                    <button id="enableLocationBtn" class="ml-2 underline font-medium">Enable Now</button>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="rounded-lg p-6 text-center">
+                <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-600 mx-auto mb-4"></div>
+                <p class="text-gray-800 flex items-center">
+                    Loading Map
+                    <span class="dot-1 mx-0.5 animate-blink">.</span>
+                    <span class="dot-2 mx-0.5 animate-blink delay-200">.</span>
+                    <span class="dot-3 mx-0.5 animate-blink delay-400">.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/api-client.js"></script>
+    <script src="js/location-tracker.js"></script>
+    <script src="js/map-renderer.js"></script>
+    <script>
+        // Initialize the map page
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Check authentication
+            if (!Auth.isAuthenticated()) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.classList.remove('hidden');
+
+            try {
+                // Initialize user greeting
+                const user = Auth.getCurrentUser();
+                document.getElementById('userGreeting').textContent = `Hello, ${user.name}`;
+                document.getElementById('shareCode').value = user.shareCode;
+
+                // Initialize map
+                await MapRenderer.init();
+                
+                // Initialize location tracking
+                await LocationTracker.init();
+                
+                // Start location updates
+                LocationTracker.startTracking();
+
+                // Setup event listeners
+                setupEventListeners();
+
+                loadingOverlay.classList.add('hidden');
+            } catch (error) {
+                console.error('Failed to initialize map:', error);
+                alert('Failed to load the map. Please refresh the page.');
+                loadingOverlay.classList.add('hidden');
+            }
+        });
+
+        function setupEventListeners() {
+            // Logout
+            document.getElementById('logoutBtn').addEventListener('click', function() {
+                Auth.logout();
+                window.location.href = 'index.html';
+            });
+
+            // Copy share code
+            document.getElementById('copyCodeBtn').addEventListener('click', function() {
+                const shareCode = document.getElementById('shareCode');
+                shareCode.select();
+                document.execCommand('copy');
+                
+                // Show feedback
+                const btn = document.getElementById('copyCodeBtn');
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                }, 1000);
+            });
+
+            // Add friend
+            document.getElementById('addFriendBtn').addEventListener('click', async function() {
+                const friendCode = document.getElementById('friendCode').value.trim();
+                if (!friendCode) {
+                    alert('Please enter a friend\'s share code');
+                    return;
+                }
+
+                try {
+                    const friend = await ApiClient.getFriendByCode(friendCode);
+                    if (friend) {
+                        addFriendToList(friend);
+                        MapRenderer.addFriendMarker(friend);
+                        document.getElementById('friendCode').value = '';
+                    } else {
+                        alert('Friend not found with that code');
+                    }
+                } catch (error) {
+                    alert('Failed to add friend');
+                }
+            });
+
+            // Center map on user
+            document.getElementById('centerMapBtn').addEventListener('click', function() {
+                MapRenderer.centerOnUser();
+            });
+
+            // Toggle sharing
+            document.getElementById('toggleSharingBtn').addEventListener('click', function() {
+                LocationTracker.toggleSharing();
+                updateSharingStatus();
+            });
+
+            // Enable location
+            document.getElementById('enableLocationBtn').addEventListener('click', function() {
+                LocationTracker.requestPermission();
+            });
+        }
+
+        function addFriendToList(friend) {
+            const friendsList = document.getElementById('friendsList');
+            const friendElement = document.createElement('div');
+            friendElement.className = 'bg-gray-50 rounded-lg p-3 flex items-center justify-between';
+            friendElement.innerHTML = `
+                <div class="flex items-center">
+                    <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                    <span class="text-sm font-medium text-gray-700">${friend.name}</span>
+                </div>
+                <button class="text-red-600 hover:text-red-800 text-sm" onclick="removeFriend('${friend.id}')">
+                    <i class="fas fa-times"></i>
+                </button>
+            `;
+            friendsList.appendChild(friendElement);
+        }
+
+        function removeFriend(friendId) {
+            // Remove from UI and map
+            MapRenderer.removeFriendMarker(friendId);
+            // Remove from friends list (implementation depends on your data structure)
+        }
+
+        function updateSharingStatus() {
+            const isSharing = LocationTracker.getSharingStatus();
+            const statusIndicator = document.getElementById('statusIndicator');
+            const statusText = document.getElementById('statusText');
+            const toggleBtn = document.getElementById('toggleSharingBtn');
+
+            if (isSharing) {
+                statusIndicator.className = 'w-3 h-3 bg-green-500 rounded-full';
+                statusText.textContent = 'Location sharing is active';
+                toggleBtn.innerHTML = '<i class="fas fa-eye text-green-600"></i>';
+            } else {
+                statusIndicator.className = 'w-3 h-3 bg-red-500 rounded-full';
+                statusText.textContent = 'Location sharing is paused';
+                toggleBtn.innerHTML = '<i class="fas fa-eye-slash text-red-600"></i>';
+            }
+        }
+
+        // Update location display
+        function updateLocationDisplay(location) {
+            document.getElementById('currentLocation').textContent = 
+                `${location.lat.toFixed(6)}, ${location.lng.toFixed(6)}`;
+            document.getElementById('lastUpdated').textContent = 
+                `Last updated: ${new Date().toLocaleTimeString()}`;
+        }
+
+        // Listen for location updates
+        window.addEventListener('locationUpdate', function(event) {
+            updateLocationDisplay(event.detail);
+        });
+    </script>
+     <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>LocationShare</span>
+                    </div>
+                    <p>Currently sharing your location with friends. Stay connected and safe.</p>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/qaisers.official/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://github.com/qaisersofficial" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/qaisers.official" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/qaisersofficial" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Actions</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="#" onclick="MapRenderer.centerOnUser()">Center Map</a></li>
+                        <li><a href="#" onclick="LocationTracker.toggleSharing()">Toggle Sharing</a></li>
+                        <li><a href="#">Export Data</a></li>
+                        <li><a href="#">Share Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Map Info</h3>
+                    <ul>
+                        <li><a href="#">Map Controls</a></li>
+                        <li><a href="#">Location Accuracy</a></li>
+                        <li><a href="#">Battery Optimization</a></li>
+                        <li><a href="#">Offline Mode</a></li>
+                        <li><a href="#">Map Styles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="https://www.linkedin.com/in/qaisersofficial">Contact Support</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Privacy Settings</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LocationShare. All rights reserved. Designed and created by Qaiser Ali.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Maps API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={yourapikey}&callback=MapRenderer.initCallback"></script>
+</body>
+</html>

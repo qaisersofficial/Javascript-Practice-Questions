@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form validation using Javascript</title>
+    <title>Live Error Display Form</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <h1>Live Error Display Form</h1>
+<p>It will show validation messages while typing, not just on submit</p>  
     <form id="signupForm">
   <input type="text" id="name" placeholder="Name" />
+  <small id="nameError"></small>
+  
   <input type="email" id="email" placeholder="Email" />
+  <small id="emailError"></small>
+
   <input type="password" id="password" placeholder="Password" />
-  <button type="submit">Submit</button>
-  <p id="error"></p>
+  <small id="passwordError"></small>
+
+  <button type="submit" id="submitBtn" disabled>Submit</button>
+  <!-- <p id="error"></p> -->
 </form> 
 <script src="./script.js"></script>
 </body>
